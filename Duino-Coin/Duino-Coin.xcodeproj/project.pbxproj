@@ -1,0 +1,734 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FFEEE6182752BCDF00CD1E9B /* Duino_CoinApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEEE6172752BCDF00CD1E9B /* Duino_CoinApp.swift */; };
+		FFEEE61A2752BCDF00CD1E9B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEEE6192752BCDF00CD1E9B /* ContentView.swift */; };
+		FFEEE61C2752BCE100CD1E9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFEEE61B2752BCE100CD1E9B /* Assets.xcassets */; };
+		FFEEE61F2752BCE100CD1E9B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFEEE61E2752BCE100CD1E9B /* Preview Assets.xcassets */; };
+		FFEEE6292752BCE100CD1E9B /* Duino_CoinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEEE6282752BCE100CD1E9B /* Duino_CoinTests.swift */; };
+		FFEEE6332752BCE100CD1E9B /* Duino_CoinUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEEE6322752BCE100CD1E9B /* Duino_CoinUITests.swift */; };
+		FFEEE6352752BCE100CD1E9B /* Duino_CoinUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEEE6342752BCE100CD1E9B /* Duino_CoinUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FFEEE6252752BCE100CD1E9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFEEE60C2752BCDF00CD1E9B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FFEEE6132752BCDF00CD1E9B;
+			remoteInfo = "Duino-Coin";
+		};
+		FFEEE62F2752BCE100CD1E9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFEEE60C2752BCDF00CD1E9B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FFEEE6132752BCDF00CD1E9B;
+			remoteInfo = "Duino-Coin";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FFEEE6142752BCDF00CD1E9B /* Duino-Coin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Duino-Coin.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFEEE6172752BCDF00CD1E9B /* Duino_CoinApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Duino_CoinApp.swift; sourceTree = "<group>"; };
+		FFEEE6192752BCDF00CD1E9B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FFEEE61B2752BCE100CD1E9B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FFEEE61E2752BCE100CD1E9B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FFEEE6242752BCE100CD1E9B /* Duino-CoinTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Duino-CoinTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFEEE6282752BCE100CD1E9B /* Duino_CoinTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Duino_CoinTests.swift; sourceTree = "<group>"; };
+		FFEEE62E2752BCE100CD1E9B /* Duino-CoinUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Duino-CoinUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFEEE6322752BCE100CD1E9B /* Duino_CoinUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Duino_CoinUITests.swift; sourceTree = "<group>"; };
+		FFEEE6342752BCE100CD1E9B /* Duino_CoinUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Duino_CoinUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FFEEE6112752BCDF00CD1E9B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFEEE6212752BCE100CD1E9B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFEEE62B2752BCE100CD1E9B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FFEEE60B2752BCDE00CD1E9B = {
+			isa = PBXGroup;
+			children = (
+				FFEEE6162752BCDF00CD1E9B /* Duino-Coin */,
+				FFEEE6272752BCE100CD1E9B /* Duino-CoinTests */,
+				FFEEE6312752BCE100CD1E9B /* Duino-CoinUITests */,
+				FFEEE6152752BCDF00CD1E9B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FFEEE6152752BCDF00CD1E9B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FFEEE6142752BCDF00CD1E9B /* Duino-Coin.app */,
+				FFEEE6242752BCE100CD1E9B /* Duino-CoinTests.xctest */,
+				FFEEE62E2752BCE100CD1E9B /* Duino-CoinUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FFEEE6162752BCDF00CD1E9B /* Duino-Coin */ = {
+			isa = PBXGroup;
+			children = (
+				FFEEE6422752BD9F00CD1E9B /* App */,
+				FFEEE6432752BDA300CD1E9B /* View */,
+				FFEEE6412752BD9200CD1E9B /* Model */,
+				FFEEE6442752BDAA00CD1E9B /* Network */,
+				FFEEE6452752BDB400CD1E9B /* URL */,
+				FFEEE61B2752BCE100CD1E9B /* Assets.xcassets */,
+				FFEEE61D2752BCE100CD1E9B /* Preview Content */,
+			);
+			path = "Duino-Coin";
+			sourceTree = "<group>";
+		};
+		FFEEE61D2752BCE100CD1E9B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FFEEE61E2752BCE100CD1E9B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FFEEE6272752BCE100CD1E9B /* Duino-CoinTests */ = {
+			isa = PBXGroup;
+			children = (
+				FFEEE6282752BCE100CD1E9B /* Duino_CoinTests.swift */,
+			);
+			path = "Duino-CoinTests";
+			sourceTree = "<group>";
+		};
+		FFEEE6312752BCE100CD1E9B /* Duino-CoinUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FFEEE6322752BCE100CD1E9B /* Duino_CoinUITests.swift */,
+				FFEEE6342752BCE100CD1E9B /* Duino_CoinUITestsLaunchTests.swift */,
+			);
+			path = "Duino-CoinUITests";
+			sourceTree = "<group>";
+		};
+		FFEEE6412752BD9200CD1E9B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FFEEE6422752BD9F00CD1E9B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				FFEEE6172752BCDF00CD1E9B /* Duino_CoinApp.swift */,
+				FFEEE6192752BCDF00CD1E9B /* ContentView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		FFEEE6432752BDA300CD1E9B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FFEEE64D2752C04800CD1E9B /* Auth View */,
+				FFEEE64C2752BFD100CD1E9B /* TabItem View */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FFEEE6442752BDAA00CD1E9B /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		FFEEE6452752BDB400CD1E9B /* URL */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = URL;
+			sourceTree = "<group>";
+		};
+		FFEEE6462752BE0F00CD1E9B /* Login View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Login View";
+			sourceTree = "<group>";
+		};
+		FFEEE6472752BEFC00CD1E9B /* Dashboard View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Dashboard View";
+			sourceTree = "<group>";
+		};
+		FFEEE6482752BF0D00CD1E9B /* Statistics View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Statistics View";
+			sourceTree = "<group>";
+		};
+		FFEEE6492752BF1C00CD1E9B /* SendFund View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "SendFund View";
+			sourceTree = "<group>";
+		};
+		FFEEE64A2752BF3A00CD1E9B /* Transactions View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Transactions View";
+			sourceTree = "<group>";
+		};
+		FFEEE64C2752BFD100CD1E9B /* TabItem View */ = {
+			isa = PBXGroup;
+			children = (
+				FFEEE6472752BEFC00CD1E9B /* Dashboard View */,
+				FFEEE6482752BF0D00CD1E9B /* Statistics View */,
+				FFEEE6492752BF1C00CD1E9B /* SendFund View */,
+				FFEEE64A2752BF3A00CD1E9B /* Transactions View */,
+			);
+			path = "TabItem View";
+			sourceTree = "<group>";
+		};
+		FFEEE64D2752C04800CD1E9B /* Auth View */ = {
+			isa = PBXGroup;
+			children = (
+				FFEEE6462752BE0F00CD1E9B /* Login View */,
+				FFEEE64E2752C07300CD1E9B /* PasswordUpdate View */,
+				FFEEE6502752C15E00CD1E9B /* Profile View */,
+				FFEEE64F2752C0C800CD1E9B /* About View */,
+			);
+			path = "Auth View";
+			sourceTree = "<group>";
+		};
+		FFEEE64E2752C07300CD1E9B /* PasswordUpdate View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "PasswordUpdate View";
+			sourceTree = "<group>";
+		};
+		FFEEE64F2752C0C800CD1E9B /* About View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "About View";
+			sourceTree = "<group>";
+		};
+		FFEEE6502752C15E00CD1E9B /* Profile View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Profile View";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FFEEE6132752BCDF00CD1E9B /* Duino-Coin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFEEE6382752BCE100CD1E9B /* Build configuration list for PBXNativeTarget "Duino-Coin" */;
+			buildPhases = (
+				FFEEE6102752BCDF00CD1E9B /* Sources */,
+				FFEEE6112752BCDF00CD1E9B /* Frameworks */,
+				FFEEE6122752BCDF00CD1E9B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Duino-Coin";
+			productName = "Duino-Coin";
+			productReference = FFEEE6142752BCDF00CD1E9B /* Duino-Coin.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FFEEE6232752BCE100CD1E9B /* Duino-CoinTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFEEE63B2752BCE100CD1E9B /* Build configuration list for PBXNativeTarget "Duino-CoinTests" */;
+			buildPhases = (
+				FFEEE6202752BCE100CD1E9B /* Sources */,
+				FFEEE6212752BCE100CD1E9B /* Frameworks */,
+				FFEEE6222752BCE100CD1E9B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FFEEE6262752BCE100CD1E9B /* PBXTargetDependency */,
+			);
+			name = "Duino-CoinTests";
+			productName = "Duino-CoinTests";
+			productReference = FFEEE6242752BCE100CD1E9B /* Duino-CoinTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FFEEE62D2752BCE100CD1E9B /* Duino-CoinUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFEEE63E2752BCE100CD1E9B /* Build configuration list for PBXNativeTarget "Duino-CoinUITests" */;
+			buildPhases = (
+				FFEEE62A2752BCE100CD1E9B /* Sources */,
+				FFEEE62B2752BCE100CD1E9B /* Frameworks */,
+				FFEEE62C2752BCE100CD1E9B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FFEEE6302752BCE100CD1E9B /* PBXTargetDependency */,
+			);
+			name = "Duino-CoinUITests";
+			productName = "Duino-CoinUITests";
+			productReference = FFEEE62E2752BCE100CD1E9B /* Duino-CoinUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FFEEE60C2752BCDF00CD1E9B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					FFEEE6132752BCDF00CD1E9B = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					FFEEE6232752BCE100CD1E9B = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = FFEEE6132752BCDF00CD1E9B;
+					};
+					FFEEE62D2752BCE100CD1E9B = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = FFEEE6132752BCDF00CD1E9B;
+					};
+				};
+			};
+			buildConfigurationList = FFEEE60F2752BCDF00CD1E9B /* Build configuration list for PBXProject "Duino-Coin" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FFEEE60B2752BCDE00CD1E9B;
+			productRefGroup = FFEEE6152752BCDF00CD1E9B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FFEEE6132752BCDF00CD1E9B /* Duino-Coin */,
+				FFEEE6232752BCE100CD1E9B /* Duino-CoinTests */,
+				FFEEE62D2752BCE100CD1E9B /* Duino-CoinUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FFEEE6122752BCDF00CD1E9B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFEEE61F2752BCE100CD1E9B /* Preview Assets.xcassets in Resources */,
+				FFEEE61C2752BCE100CD1E9B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFEEE6222752BCE100CD1E9B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFEEE62C2752BCE100CD1E9B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FFEEE6102752BCDF00CD1E9B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFEEE61A2752BCDF00CD1E9B /* ContentView.swift in Sources */,
+				FFEEE6182752BCDF00CD1E9B /* Duino_CoinApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFEEE6202752BCE100CD1E9B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFEEE6292752BCE100CD1E9B /* Duino_CoinTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFEEE62A2752BCE100CD1E9B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFEEE6332752BCE100CD1E9B /* Duino_CoinUITests.swift in Sources */,
+				FFEEE6352752BCE100CD1E9B /* Duino_CoinUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FFEEE6262752BCE100CD1E9B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FFEEE6132752BCDF00CD1E9B /* Duino-Coin */;
+			targetProxy = FFEEE6252752BCE100CD1E9B /* PBXContainerItemProxy */;
+		};
+		FFEEE6302752BCE100CD1E9B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FFEEE6132752BCDF00CD1E9B /* Duino-Coin */;
+			targetProxy = FFEEE62F2752BCE100CD1E9B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FFEEE6362752BCE100CD1E9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FFEEE6372752BCE100CD1E9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FFEEE6392752BCE100CD1E9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Duino-Coin/Preview Content\"";
+				DEVELOPMENT_TEAM = 4JWUSF25X2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fahimrahman.Duino-Coin";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FFEEE63A2752BCE100CD1E9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Duino-Coin/Preview Content\"";
+				DEVELOPMENT_TEAM = 4JWUSF25X2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fahimrahman.Duino-Coin";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FFEEE63C2752BCE100CD1E9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4JWUSF25X2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fahimrahman.Duino-CoinTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Duino-Coin.app/Duino-Coin";
+			};
+			name = Debug;
+		};
+		FFEEE63D2752BCE100CD1E9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4JWUSF25X2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fahimrahman.Duino-CoinTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Duino-Coin.app/Duino-Coin";
+			};
+			name = Release;
+		};
+		FFEEE63F2752BCE100CD1E9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4JWUSF25X2;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fahimrahman.Duino-CoinUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Duino-Coin";
+			};
+			name = Debug;
+		};
+		FFEEE6402752BCE100CD1E9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4JWUSF25X2;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fahimrahman.Duino-CoinUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Duino-Coin";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FFEEE60F2752BCDF00CD1E9B /* Build configuration list for PBXProject "Duino-Coin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFEEE6362752BCE100CD1E9B /* Debug */,
+				FFEEE6372752BCE100CD1E9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFEEE6382752BCE100CD1E9B /* Build configuration list for PBXNativeTarget "Duino-Coin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFEEE6392752BCE100CD1E9B /* Debug */,
+				FFEEE63A2752BCE100CD1E9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFEEE63B2752BCE100CD1E9B /* Build configuration list for PBXNativeTarget "Duino-CoinTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFEEE63C2752BCE100CD1E9B /* Debug */,
+				FFEEE63D2752BCE100CD1E9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFEEE63E2752BCE100CD1E9B /* Build configuration list for PBXNativeTarget "Duino-CoinUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFEEE63F2752BCE100CD1E9B /* Debug */,
+				FFEEE6402752BCE100CD1E9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FFEEE60C2752BCDF00CD1E9B /* Project object */;
+}
