@@ -8,9 +8,12 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State var username: String = ""
+    @State var password: String = ""
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        LoginView(username: $username, password: $password)
     }
 }
 

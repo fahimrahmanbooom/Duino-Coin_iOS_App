@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF2E7B7B2754334A007A7A91 /* TopLogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2E7B7A2754334A007A7A91 /* TopLogoView.swift */; };
+		FF2E7B7D27543754007A7A91 /* LoginTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2E7B7C27543754007A7A91 /* LoginTextView.swift */; };
+		FF2E7B7F27544088007A7A91 /* CredentialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2E7B7E27544088007A7A91 /* CredentialView.swift */; };
+		FF2E7B8127544AF9007A7A91 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2E7B8027544AF9007A7A91 /* ButtonView.swift */; };
+		FF2E7B8427544F36007A7A91 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2E7B8327544F36007A7A91 /* AppColors.swift */; };
+		FFA7242D275426D5001E6440 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA7242C275426D5001E6440 /* LoginView.swift */; };
 		FFEEE6182752BCDF00CD1E9B /* Duino_CoinApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEEE6172752BCDF00CD1E9B /* Duino_CoinApp.swift */; };
 		FFEEE61A2752BCDF00CD1E9B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEEE6192752BCDF00CD1E9B /* ContentView.swift */; };
 		FFEEE61C2752BCE100CD1E9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFEEE61B2752BCE100CD1E9B /* Assets.xcassets */; };
@@ -34,6 +40,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FF2E7B7A2754334A007A7A91 /* TopLogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopLogoView.swift; sourceTree = "<group>"; };
+		FF2E7B7C27543754007A7A91 /* LoginTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTextView.swift; sourceTree = "<group>"; };
+		FF2E7B7E27544088007A7A91 /* CredentialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialView.swift; sourceTree = "<group>"; };
+		FF2E7B8027544AF9007A7A91 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		FF2E7B8327544F36007A7A91 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
+		FF2E7B87275471BA007A7A91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		FFA7242C275426D5001E6440 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		FFEEE6142752BCDF00CD1E9B /* Duino-Coin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Duino-Coin.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFEEE6172752BCDF00CD1E9B /* Duino_CoinApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Duino_CoinApp.swift; sourceTree = "<group>"; };
 		FFEEE6192752BCDF00CD1E9B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -71,6 +84,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FF2E7B8227544F10007A7A91 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				FF2E7B8327544F36007A7A91 /* AppColors.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 		FFEEE60B2752BCDE00CD1E9B = {
 			isa = PBXGroup;
 			children = (
@@ -94,11 +115,13 @@
 		FFEEE6162752BCDF00CD1E9B /* Duino-Coin */ = {
 			isa = PBXGroup;
 			children = (
+				FF2E7B87275471BA007A7A91 /* Info.plist */,
 				FFEEE6422752BD9F00CD1E9B /* App */,
-				FFEEE6432752BDA300CD1E9B /* View */,
-				FFEEE6412752BD9200CD1E9B /* Model */,
+				FFEEE6432752BDA300CD1E9B /* Views */,
+				FFEEE6412752BD9200CD1E9B /* Models */,
 				FFEEE6442752BDAA00CD1E9B /* Network */,
-				FFEEE6452752BDB400CD1E9B /* URL */,
+				FF2E7B8227544F10007A7A91 /* Helper */,
+				FFEEE6452752BDB400CD1E9B /* URLs */,
 				FFEEE61B2752BCE100CD1E9B /* Assets.xcassets */,
 				FFEEE61D2752BCE100CD1E9B /* Preview Content */,
 			);
@@ -130,11 +153,11 @@
 			path = "Duino-CoinUITests";
 			sourceTree = "<group>";
 		};
-		FFEEE6412752BD9200CD1E9B /* Model */ = {
+		FFEEE6412752BD9200CD1E9B /* Models */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Model;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		FFEEE6422752BD9F00CD1E9B /* App */ = {
@@ -146,13 +169,19 @@
 			path = App;
 			sourceTree = "<group>";
 		};
-		FFEEE6432752BDA300CD1E9B /* View */ = {
+		FFEEE6432752BDA300CD1E9B /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				FFEEE64D2752C04800CD1E9B /* Auth View */,
-				FFEEE64C2752BFD100CD1E9B /* TabItem View */,
+				FFEEE6462752BE0F00CD1E9B /* Login View */,
+				FFEEE64E2752C07300CD1E9B /* PasswordUpdate View */,
+				FFEEE6502752C15E00CD1E9B /* Profile View */,
+				FFEEE64F2752C0C800CD1E9B /* About View */,
+				FFEEE6472752BEFC00CD1E9B /* Dashboard View */,
+				FFEEE6482752BF0D00CD1E9B /* Statistics View */,
+				FFEEE6492752BF1C00CD1E9B /* SendFund View */,
+				FFEEE64A2752BF3A00CD1E9B /* Transactions View */,
 			);
-			path = View;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		FFEEE6442752BDAA00CD1E9B /* Network */ = {
@@ -162,16 +191,21 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
-		FFEEE6452752BDB400CD1E9B /* URL */ = {
+		FFEEE6452752BDB400CD1E9B /* URLs */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = URL;
+			path = URLs;
 			sourceTree = "<group>";
 		};
 		FFEEE6462752BE0F00CD1E9B /* Login View */ = {
 			isa = PBXGroup;
 			children = (
+				FFA7242C275426D5001E6440 /* LoginView.swift */,
+				FF2E7B7A2754334A007A7A91 /* TopLogoView.swift */,
+				FF2E7B7C27543754007A7A91 /* LoginTextView.swift */,
+				FF2E7B7E27544088007A7A91 /* CredentialView.swift */,
+				FF2E7B8027544AF9007A7A91 /* ButtonView.swift */,
 			);
 			path = "Login View";
 			sourceTree = "<group>";
@@ -202,28 +236,6 @@
 			children = (
 			);
 			path = "Transactions View";
-			sourceTree = "<group>";
-		};
-		FFEEE64C2752BFD100CD1E9B /* TabItem View */ = {
-			isa = PBXGroup;
-			children = (
-				FFEEE6472752BEFC00CD1E9B /* Dashboard View */,
-				FFEEE6482752BF0D00CD1E9B /* Statistics View */,
-				FFEEE6492752BF1C00CD1E9B /* SendFund View */,
-				FFEEE64A2752BF3A00CD1E9B /* Transactions View */,
-			);
-			path = "TabItem View";
-			sourceTree = "<group>";
-		};
-		FFEEE64D2752C04800CD1E9B /* Auth View */ = {
-			isa = PBXGroup;
-			children = (
-				FFEEE6462752BE0F00CD1E9B /* Login View */,
-				FFEEE64E2752C07300CD1E9B /* PasswordUpdate View */,
-				FFEEE6502752C15E00CD1E9B /* Profile View */,
-				FFEEE64F2752C0C800CD1E9B /* About View */,
-			);
-			path = "Auth View";
 			sourceTree = "<group>";
 		};
 		FFEEE64E2752C07300CD1E9B /* PasswordUpdate View */ = {
@@ -377,8 +389,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFA7242D275426D5001E6440 /* LoginView.swift in Sources */,
+				FF2E7B7D27543754007A7A91 /* LoginTextView.swift in Sources */,
 				FFEEE61A2752BCDF00CD1E9B /* ContentView.swift in Sources */,
 				FFEEE6182752BCDF00CD1E9B /* Duino_CoinApp.swift in Sources */,
+				FF2E7B7B2754334A007A7A91 /* TopLogoView.swift in Sources */,
+				FF2E7B8427544F36007A7A91 /* AppColors.swift in Sources */,
+				FF2E7B7F27544088007A7A91 /* CredentialView.swift in Sources */,
+				FF2E7B8127544AF9007A7A91 /* ButtonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -542,9 +560,9 @@
 				DEVELOPMENT_TEAM = 4JWUSF25X2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Duino-Coin/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -573,9 +591,9 @@
 				DEVELOPMENT_TEAM = 4JWUSF25X2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Duino-Coin/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -597,7 +615,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4JWUSF25X2;
@@ -622,7 +639,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4JWUSF25X2;
