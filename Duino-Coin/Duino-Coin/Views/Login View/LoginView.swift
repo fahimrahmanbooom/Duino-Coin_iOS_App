@@ -11,8 +11,7 @@ import SwiftUI
 struct LoginView: View {
     
     // MARK: Properties
-    @Binding var username: String
-    @Binding var password: String
+    @ObservedObject var credentials = Credentials()
     
     // body
     var body: some View {
@@ -25,9 +24,9 @@ struct LoginView: View {
                     TopLogoView()
                     Spacer()
                     LoginTextView()
-                    CredentialView(username: $username, password: $password)
+                    CredentialView(credentials: credentials)
                     Spacer()
-                    ButtonView()
+                    ButtonView(credentials: credentials)
                     Spacer()
                 } //: vstack
             } //: zstack
@@ -39,6 +38,6 @@ struct LoginView: View {
 // MARK: Preview
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
-        LoginView(username: .constant(""), password: .constant(""))
+        LoginView()
     }
 }

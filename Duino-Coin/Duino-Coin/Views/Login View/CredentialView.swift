@@ -17,14 +17,12 @@ private enum Field: Hashable {
 struct CredentialView: View {
     
     // MARK: Properties
-    @Binding var username: String
-    @Binding var password: String
-    
     @FocusState private var focusedField: Field?
+    
+    @ObservedObject var credentials: Credentials
     
     // body
     var body: some View {
-        
         // group box
         GroupBox {
             // vstack
@@ -38,10 +36,11 @@ struct CredentialView: View {
                         .frame(width: 25, height: 25)
                     
                     // text input field
-                    TextField("Username", text: $username)
+                    TextField("Username", text: $credentials.username)
                         .padding([.top, .bottom, .trailing], 20)
                         .padding(.leading, 10)
                         .keyboardType(.namePhonePad)
+                        .textFieldStyle(.roundedBorder)
                         .focused($focusedField, equals: .username)
                     
                 } //: hstack
@@ -56,9 +55,10 @@ struct CredentialView: View {
                         .frame(width: 20, height: 26)
                     
                     // text input field
-                    SecureField("Password", text: $password)
+                    SecureField("Password", text: $credentials.password)
                         .padding([.top, .bottom, .trailing], 20)
                         .padding(.leading, 15)
+                        .textFieldStyle(.roundedBorder)
                         .focused($focusedField, equals: .password)
                         
                 } //: hstack
@@ -79,7 +79,7 @@ struct CredentialView: View {
 // MARK: Preview
 struct CredentialView_Previews: PreviewProvider {
     static var previews: some View {
-        CredentialView(username: .constant(""), password: .constant(""))
+        CredentialView(credentials: .init())
             .previewLayout(.sizeThatFits)
     }
 }

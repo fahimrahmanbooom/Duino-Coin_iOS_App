@@ -12,9 +12,12 @@
 		FF2E7B7F27544088007A7A91 /* CredentialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2E7B7E27544088007A7A91 /* CredentialView.swift */; };
 		FF2E7B8127544AF9007A7A91 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2E7B8027544AF9007A7A91 /* ButtonView.swift */; };
 		FF2E7B8427544F36007A7A91 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2E7B8327544F36007A7A91 /* AppColors.swift */; };
+		FF76C0C72755406600EF2FA1 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF76C0C62755406600EF2FA1 /* LoginModel.swift */; };
+		FF76C0C92755411200EF2FA1 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF76C0C82755411200EF2FA1 /* API.swift */; };
+		FF76C0CB27554BC100EF2FA1 /* URLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF76C0CA27554BC100EF2FA1 /* URLs.swift */; };
+		FF76C0CD275637DE00EF2FA1 /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF76C0CC275637DE00EF2FA1 /* Credentials.swift */; };
 		FFA7242D275426D5001E6440 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA7242C275426D5001E6440 /* LoginView.swift */; };
 		FFEEE6182752BCDF00CD1E9B /* Duino_CoinApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEEE6172752BCDF00CD1E9B /* Duino_CoinApp.swift */; };
-		FFEEE61A2752BCDF00CD1E9B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEEE6192752BCDF00CD1E9B /* ContentView.swift */; };
 		FFEEE61C2752BCE100CD1E9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFEEE61B2752BCE100CD1E9B /* Assets.xcassets */; };
 		FFEEE61F2752BCE100CD1E9B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFEEE61E2752BCE100CD1E9B /* Preview Assets.xcassets */; };
 		FFEEE6292752BCE100CD1E9B /* Duino_CoinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEEE6282752BCE100CD1E9B /* Duino_CoinTests.swift */; };
@@ -46,10 +49,13 @@
 		FF2E7B8027544AF9007A7A91 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		FF2E7B8327544F36007A7A91 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
 		FF2E7B87275471BA007A7A91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		FF76C0C62755406600EF2FA1 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		FF76C0C82755411200EF2FA1 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		FF76C0CA27554BC100EF2FA1 /* URLs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLs.swift; sourceTree = "<group>"; };
+		FF76C0CC275637DE00EF2FA1 /* Credentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
 		FFA7242C275426D5001E6440 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		FFEEE6142752BCDF00CD1E9B /* Duino-Coin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Duino-Coin.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFEEE6172752BCDF00CD1E9B /* Duino_CoinApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Duino_CoinApp.swift; sourceTree = "<group>"; };
-		FFEEE6192752BCDF00CD1E9B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FFEEE61B2752BCE100CD1E9B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FFEEE61E2752BCE100CD1E9B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FFEEE6242752BCE100CD1E9B /* Duino-CoinTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Duino-CoinTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -156,6 +162,7 @@
 		FFEEE6412752BD9200CD1E9B /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				FF76C0C62755406600EF2FA1 /* LoginModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -164,7 +171,6 @@
 			isa = PBXGroup;
 			children = (
 				FFEEE6172752BCDF00CD1E9B /* Duino_CoinApp.swift */,
-				FFEEE6192752BCDF00CD1E9B /* ContentView.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -187,6 +193,7 @@
 		FFEEE6442752BDAA00CD1E9B /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				FF76C0C82755411200EF2FA1 /* API.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -194,6 +201,7 @@
 		FFEEE6452752BDB400CD1E9B /* URLs */ = {
 			isa = PBXGroup;
 			children = (
+				FF76C0CA27554BC100EF2FA1 /* URLs.swift */,
 			);
 			path = URLs;
 			sourceTree = "<group>";
@@ -206,6 +214,7 @@
 				FF2E7B7C27543754007A7A91 /* LoginTextView.swift */,
 				FF2E7B7E27544088007A7A91 /* CredentialView.swift */,
 				FF2E7B8027544AF9007A7A91 /* ButtonView.swift */,
+				FF76C0CC275637DE00EF2FA1 /* Credentials.swift */,
 			);
 			path = "Login View";
 			sourceTree = "<group>";
@@ -391,8 +400,11 @@
 			files = (
 				FFA7242D275426D5001E6440 /* LoginView.swift in Sources */,
 				FF2E7B7D27543754007A7A91 /* LoginTextView.swift in Sources */,
-				FFEEE61A2752BCDF00CD1E9B /* ContentView.swift in Sources */,
+				FF76C0CB27554BC100EF2FA1 /* URLs.swift in Sources */,
+				FF76C0CD275637DE00EF2FA1 /* Credentials.swift in Sources */,
 				FFEEE6182752BCDF00CD1E9B /* Duino_CoinApp.swift in Sources */,
+				FF76C0C92755411200EF2FA1 /* API.swift in Sources */,
+				FF76C0C72755406600EF2FA1 /* LoginModel.swift in Sources */,
 				FF2E7B7B2754334A007A7A91 /* TopLogoView.swift in Sources */,
 				FF2E7B8427544F36007A7A91 /* AppColors.swift in Sources */,
 				FF2E7B7F27544088007A7A91 /* CredentialView.swift in Sources */,

@@ -9,9 +9,17 @@ import SwiftUI
 
 @main
 struct Duino_CoinApp: App {
+    
+    @AppStorage("loggedIn") var loggedIn: Bool = false
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            if !loggedIn {
+                LoginView()
+            }
+            else {
+                EmptyView() // Home View
+            }
         }
     }
 }
