@@ -18,14 +18,15 @@ struct TopLogoView: View {
         // hstack
         HStack(alignment: .center, spacing: 0) {
             // image
-            Image("duinoCoinLogo")
+            Image("leftCropDuinoCoinLogo")
                 .resizable()
-                .frame(width: 80, height: 80)
+                .frame(width: 40, height: 40)
+                .padding(.leading, 10)
                 .opacity(isAnimated ? 1 : 0)
                 .offset(x: isAnimated ? 0 : -25, y: 0)
                 .onAppear(perform: {
                     withAnimation(.easeOut(duration: 0.5)) {
-                        isAnimated.toggle()
+                        isAnimated = true
                     }
                 })
             

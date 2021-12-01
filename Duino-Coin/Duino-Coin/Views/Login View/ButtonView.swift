@@ -18,6 +18,9 @@ struct ButtonView: View {
     @State private var wrongCredentialAlert = false
     
     @ObservedObject var credentials: Credentials
+    @ObservedObject var loader: Loader
+    
+    @Environment(\.openURL) var openURL
     
     // body
     var body: some View {
@@ -35,15 +38,25 @@ struct ButtonView: View {
                     else {
                         // login task
                         Task {
+                            
+                            self.loader.isLoading = true
+                            
                             await Networking.getRequest(url: URL.loginURL(username: credentials.username, password: credentials.password), expecting: LoginModel.self, completion: { data in
                                 do {
                                     try self.loginModel = data.get()
                                     if self.loginModel?.success == true {
-                                        loggedIn = true
+                                        DispatchQueue.main.async {
+                                            loggedIn = true
+                                            self.loader.isLoading = false
+                                        }
+                                        UserDefaults.standard.set(credentials.username, forKey: "username")
                                     }
                                     else {
                                         // alert for wrong credentials
-                                        wrongCredentialAlert = true
+                                        DispatchQueue.main.async {
+                                            wrongCredentialAlert = true
+                                            self.loader.isLoading = false
+                                        }
                                     }
                                 } catch {
                                     print(error)
@@ -81,6 +94,7 @@ struct ButtonView: View {
                 // button
                 Button {
                     // register operation
+                    openURL((URL(string: "https://wallet.duinocoin.com/register.html") ?? URL(string:"https://duinocoin.com/"))!)
                 } label: {
                     // hstack
                     HStack {
@@ -89,7 +103,7 @@ struct ButtonView: View {
                         
                         Text("Register")
                             .fontWeight(.semibold)
-                            .foregroundColor(Color.customOrange)
+                            .foregroundColor(.customOrange)
                             .frame(height: 20, alignment: .center)
                             .padding()
                         
@@ -108,7 +122,7 @@ struct ButtonView: View {
 // MARK: - Preview
 struct ButtonView_Previews: PreviewProvider {
     static var previews: some View {
-        ButtonView(credentials: .init())
+        ButtonView(credentials: .init(), loader: .init())
             .previewLayout(.sizeThatFits)
     }
 }

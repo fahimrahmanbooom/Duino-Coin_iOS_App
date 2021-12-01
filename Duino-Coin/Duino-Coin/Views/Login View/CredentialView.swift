@@ -32,7 +32,7 @@ struct CredentialView: View {
                     // icon
                     Image(systemName: "person.fill")
                         .resizable()
-                        .foregroundColor(Color.customOrange)
+                        .foregroundColor(.customOrange)
                         .frame(width: 25, height: 25)
                     
                     // text input field
@@ -40,7 +40,6 @@ struct CredentialView: View {
                         .padding([.top, .bottom, .trailing], 20)
                         .padding(.leading, 10)
                         .keyboardType(.namePhonePad)
-                        .textFieldStyle(.roundedBorder)
                         .focused($focusedField, equals: .username)
                     
                 } //: hstack
@@ -51,14 +50,13 @@ struct CredentialView: View {
                     // icon
                     Image(systemName: "lock.fill")
                         .resizable()
-                        .foregroundColor(Color.customOrange)
+                        .foregroundColor(.customOrange)
                         .frame(width: 20, height: 26)
                     
                     // text input field
                     SecureField("Password", text: $credentials.password)
                         .padding([.top, .bottom, .trailing], 20)
                         .padding(.leading, 15)
-                        .textFieldStyle(.roundedBorder)
                         .focused($focusedField, equals: .password)
                         
                 } //: hstack

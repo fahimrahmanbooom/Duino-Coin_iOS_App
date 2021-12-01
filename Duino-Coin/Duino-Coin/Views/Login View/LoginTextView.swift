@@ -11,19 +11,15 @@ import SwiftUI
 struct LoginTextView: View {
     // body
     var body: some View {
-        // group box
-        GroupBox {
-            // hstack
-            HStack {
-                // text
-                Text("Login")
-                    .foregroundColor(.secondary)
-                    .fontWeight(.semibold)
-                    .font(.title)
-                
-                Spacer()
-            } //: hstack
-        } //: group box
+        // hstack
+        HStack {
+            // text
+            Text("Login")
+                .foregroundColor(.secondary)
+                .font(.system(size: 35, weight: .bold, design: .default))
+            
+            Spacer()
+        } //: hstack
         .padding([.leading, .trailing], 10)
     } //: body
 }

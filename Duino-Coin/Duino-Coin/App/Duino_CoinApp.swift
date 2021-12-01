@@ -18,7 +18,7 @@ struct Duino_CoinApp: App {
                 LoginView()
             }
             else {
-                EmptyView() // Home View
+                DuinoTabView()
             }
         }
     }

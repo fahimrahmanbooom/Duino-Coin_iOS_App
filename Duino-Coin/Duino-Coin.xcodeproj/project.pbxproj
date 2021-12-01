@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF23ACB42757D20100E3794D /* QuickStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF23ACB32757D20100E3794D /* QuickStatusView.swift */; };
+		FF23ACB62758100C00E3794D /* MinersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF23ACB52758100C00E3794D /* MinersListView.swift */; };
 		FF2E7B7B2754334A007A7A91 /* TopLogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2E7B7A2754334A007A7A91 /* TopLogoView.swift */; };
 		FF2E7B7D27543754007A7A91 /* LoginTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2E7B7C27543754007A7A91 /* LoginTextView.swift */; };
 		FF2E7B7F27544088007A7A91 /* CredentialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2E7B7E27544088007A7A91 /* CredentialView.swift */; };
@@ -16,6 +18,14 @@
 		FF76C0C92755411200EF2FA1 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF76C0C82755411200EF2FA1 /* API.swift */; };
 		FF76C0CB27554BC100EF2FA1 /* URLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF76C0CA27554BC100EF2FA1 /* URLs.swift */; };
 		FF76C0CD275637DE00EF2FA1 /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF76C0CC275637DE00EF2FA1 /* Credentials.swift */; };
+		FF76C0D02756703F00EF2FA1 /* DuinoTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF76C0CF2756703F00EF2FA1 /* DuinoTabView.swift */; };
+		FF76C0D2275670CE00EF2FA1 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF76C0D1275670CE00EF2FA1 /* DashboardView.swift */; };
+		FF76C0D4275670E000EF2FA1 /* StatisticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF76C0D3275670E000EF2FA1 /* StatisticsView.swift */; };
+		FF76C0D62756710300EF2FA1 /* SendFundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF76C0D52756710300EF2FA1 /* SendFundView.swift */; };
+		FF76C0D82756711500EF2FA1 /* TransactionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF76C0D72756711500EF2FA1 /* TransactionsView.swift */; };
+		FF76C0DA27567ACB00EF2FA1 /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF76C0D927567ACB00EF2FA1 /* Loader.swift */; };
+		FF76C0DC2756C18F00EF2FA1 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF76C0DB2756C18F00EF2FA1 /* ProfileView.swift */; };
+		FF76C0DE2756C62A00EF2FA1 /* UsernameTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF76C0DD2756C62A00EF2FA1 /* UsernameTextView.swift */; };
 		FFA7242D275426D5001E6440 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA7242C275426D5001E6440 /* LoginView.swift */; };
 		FFEEE6182752BCDF00CD1E9B /* Duino_CoinApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEEE6172752BCDF00CD1E9B /* Duino_CoinApp.swift */; };
 		FFEEE61C2752BCE100CD1E9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFEEE61B2752BCE100CD1E9B /* Assets.xcassets */; };
@@ -43,6 +53,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FF23ACB32757D20100E3794D /* QuickStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickStatusView.swift; sourceTree = "<group>"; };
+		FF23ACB52758100C00E3794D /* MinersListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinersListView.swift; sourceTree = "<group>"; };
 		FF2E7B7A2754334A007A7A91 /* TopLogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopLogoView.swift; sourceTree = "<group>"; };
 		FF2E7B7C27543754007A7A91 /* LoginTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTextView.swift; sourceTree = "<group>"; };
 		FF2E7B7E27544088007A7A91 /* CredentialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialView.swift; sourceTree = "<group>"; };
@@ -53,6 +65,14 @@
 		FF76C0C82755411200EF2FA1 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		FF76C0CA27554BC100EF2FA1 /* URLs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLs.swift; sourceTree = "<group>"; };
 		FF76C0CC275637DE00EF2FA1 /* Credentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
+		FF76C0CF2756703F00EF2FA1 /* DuinoTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuinoTabView.swift; sourceTree = "<group>"; };
+		FF76C0D1275670CE00EF2FA1 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		FF76C0D3275670E000EF2FA1 /* StatisticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsView.swift; sourceTree = "<group>"; };
+		FF76C0D52756710300EF2FA1 /* SendFundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendFundView.swift; sourceTree = "<group>"; };
+		FF76C0D72756711500EF2FA1 /* TransactionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsView.swift; sourceTree = "<group>"; };
+		FF76C0D927567ACB00EF2FA1 /* Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
+		FF76C0DB2756C18F00EF2FA1 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		FF76C0DD2756C62A00EF2FA1 /* UsernameTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsernameTextView.swift; sourceTree = "<group>"; };
 		FFA7242C275426D5001E6440 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		FFEEE6142752BCDF00CD1E9B /* Duino-Coin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Duino-Coin.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFEEE6172752BCDF00CD1E9B /* Duino_CoinApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Duino_CoinApp.swift; sourceTree = "<group>"; };
@@ -94,8 +114,17 @@
 			isa = PBXGroup;
 			children = (
 				FF2E7B8327544F36007A7A91 /* AppColors.swift */,
+				FF76C0D927567ACB00EF2FA1 /* Loader.swift */,
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		FF76C0CE2756701C00EF2FA1 /* Tab View */ = {
+			isa = PBXGroup;
+			children = (
+				FF76C0CF2756703F00EF2FA1 /* DuinoTabView.swift */,
+			);
+			path = "Tab View";
 			sourceTree = "<group>";
 		};
 		FFEEE60B2752BCDE00CD1E9B = {
@@ -179,13 +208,14 @@
 			isa = PBXGroup;
 			children = (
 				FFEEE6462752BE0F00CD1E9B /* Login View */,
-				FFEEE64E2752C07300CD1E9B /* PasswordUpdate View */,
-				FFEEE6502752C15E00CD1E9B /* Profile View */,
-				FFEEE64F2752C0C800CD1E9B /* About View */,
+				FF76C0CE2756701C00EF2FA1 /* Tab View */,
 				FFEEE6472752BEFC00CD1E9B /* Dashboard View */,
 				FFEEE6482752BF0D00CD1E9B /* Statistics View */,
 				FFEEE6492752BF1C00CD1E9B /* SendFund View */,
 				FFEEE64A2752BF3A00CD1E9B /* Transactions View */,
+				FFEEE6502752C15E00CD1E9B /* Profile View */,
+				FFEEE64E2752C07300CD1E9B /* PasswordUpdate View */,
+				FFEEE64F2752C0C800CD1E9B /* About View */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -222,6 +252,10 @@
 		FFEEE6472752BEFC00CD1E9B /* Dashboard View */ = {
 			isa = PBXGroup;
 			children = (
+				FF76C0D1275670CE00EF2FA1 /* DashboardView.swift */,
+				FF76C0DD2756C62A00EF2FA1 /* UsernameTextView.swift */,
+				FF23ACB32757D20100E3794D /* QuickStatusView.swift */,
+				FF23ACB52758100C00E3794D /* MinersListView.swift */,
 			);
 			path = "Dashboard View";
 			sourceTree = "<group>";
@@ -229,6 +263,7 @@
 		FFEEE6482752BF0D00CD1E9B /* Statistics View */ = {
 			isa = PBXGroup;
 			children = (
+				FF76C0D3275670E000EF2FA1 /* StatisticsView.swift */,
 			);
 			path = "Statistics View";
 			sourceTree = "<group>";
@@ -236,6 +271,7 @@
 		FFEEE6492752BF1C00CD1E9B /* SendFund View */ = {
 			isa = PBXGroup;
 			children = (
+				FF76C0D52756710300EF2FA1 /* SendFundView.swift */,
 			);
 			path = "SendFund View";
 			sourceTree = "<group>";
@@ -243,6 +279,7 @@
 		FFEEE64A2752BF3A00CD1E9B /* Transactions View */ = {
 			isa = PBXGroup;
 			children = (
+				FF76C0D72756711500EF2FA1 /* TransactionsView.swift */,
 			);
 			path = "Transactions View";
 			sourceTree = "<group>";
@@ -264,6 +301,7 @@
 		FFEEE6502752C15E00CD1E9B /* Profile View */ = {
 			isa = PBXGroup;
 			children = (
+				FF76C0DB2756C18F00EF2FA1 /* ProfileView.swift */,
 			);
 			path = "Profile View";
 			sourceTree = "<group>";
@@ -398,16 +436,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF23ACB42757D20100E3794D /* QuickStatusView.swift in Sources */,
+				FF76C0DE2756C62A00EF2FA1 /* UsernameTextView.swift in Sources */,
+				FF76C0D62756710300EF2FA1 /* SendFundView.swift in Sources */,
 				FFA7242D275426D5001E6440 /* LoginView.swift in Sources */,
 				FF2E7B7D27543754007A7A91 /* LoginTextView.swift in Sources */,
 				FF76C0CB27554BC100EF2FA1 /* URLs.swift in Sources */,
+				FF76C0D4275670E000EF2FA1 /* StatisticsView.swift in Sources */,
+				FF76C0D82756711500EF2FA1 /* TransactionsView.swift in Sources */,
 				FF76C0CD275637DE00EF2FA1 /* Credentials.swift in Sources */,
 				FFEEE6182752BCDF00CD1E9B /* Duino_CoinApp.swift in Sources */,
+				FF76C0DA27567ACB00EF2FA1 /* Loader.swift in Sources */,
+				FF23ACB62758100C00E3794D /* MinersListView.swift in Sources */,
 				FF76C0C92755411200EF2FA1 /* API.swift in Sources */,
+				FF76C0DC2756C18F00EF2FA1 /* ProfileView.swift in Sources */,
 				FF76C0C72755406600EF2FA1 /* LoginModel.swift in Sources */,
 				FF2E7B7B2754334A007A7A91 /* TopLogoView.swift in Sources */,
 				FF2E7B8427544F36007A7A91 /* AppColors.swift in Sources */,
 				FF2E7B7F27544088007A7A91 /* CredentialView.swift in Sources */,
+				FF76C0D02756703F00EF2FA1 /* DuinoTabView.swift in Sources */,
+				FF76C0D2275670CE00EF2FA1 /* DashboardView.swift in Sources */,
 				FF2E7B8127544AF9007A7A91 /* ButtonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

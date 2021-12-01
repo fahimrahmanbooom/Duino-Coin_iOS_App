@@ -12,6 +12,7 @@ struct LoginView: View {
     
     // MARK: Properties
     @ObservedObject var credentials = Credentials()
+    @ObservedObject var loader = Loader()
     
     // body
     var body: some View {
@@ -26,9 +27,16 @@ struct LoginView: View {
                     LoginTextView()
                     CredentialView(credentials: credentials)
                     Spacer()
-                    ButtonView(credentials: credentials)
+                    ButtonView(credentials: credentials, loader: loader)
                     Spacer()
                 } //: vstack
+                
+                if loader.isLoading {
+                    ProgressView()
+                        .progressViewStyle(.circular)
+                        .tint(.customOrange)
+                        .scaleEffect(1.5)
+                }
             } //: zstack
         } //: geometry reader
     } //: body
