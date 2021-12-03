@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		FF23ACB42757D20100E3794D /* QuickStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF23ACB32757D20100E3794D /* QuickStatusView.swift */; };
 		FF23ACB62758100C00E3794D /* MinersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF23ACB52758100C00E3794D /* MinersListView.swift */; };
+		FF23ACB82759287E00E3794D /* UserDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF23ACB72759287E00E3794D /* UserDataModel.swift */; };
+		FF23ACBD275A5BFC00E3794D /* DucoPriceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF23ACBC275A5BFC00E3794D /* DucoPriceModel.swift */; };
+		FF23ACBF275A6BFA00E3794D /* QuickStatusData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF23ACBE275A6BFA00E3794D /* QuickStatusData.swift */; };
+		FF23ACC1275A850900E3794D /* DoubleRounder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF23ACC0275A850900E3794D /* DoubleRounder.swift */; };
 		FF2E7B7B2754334A007A7A91 /* TopLogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2E7B7A2754334A007A7A91 /* TopLogoView.swift */; };
 		FF2E7B7D27543754007A7A91 /* LoginTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2E7B7C27543754007A7A91 /* LoginTextView.swift */; };
 		FF2E7B7F27544088007A7A91 /* CredentialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2E7B7E27544088007A7A91 /* CredentialView.swift */; };
@@ -55,6 +59,10 @@
 /* Begin PBXFileReference section */
 		FF23ACB32757D20100E3794D /* QuickStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickStatusView.swift; sourceTree = "<group>"; };
 		FF23ACB52758100C00E3794D /* MinersListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinersListView.swift; sourceTree = "<group>"; };
+		FF23ACB72759287E00E3794D /* UserDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataModel.swift; sourceTree = "<group>"; };
+		FF23ACBC275A5BFC00E3794D /* DucoPriceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DucoPriceModel.swift; sourceTree = "<group>"; };
+		FF23ACBE275A6BFA00E3794D /* QuickStatusData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickStatusData.swift; sourceTree = "<group>"; };
+		FF23ACC0275A850900E3794D /* DoubleRounder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleRounder.swift; sourceTree = "<group>"; };
 		FF2E7B7A2754334A007A7A91 /* TopLogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopLogoView.swift; sourceTree = "<group>"; };
 		FF2E7B7C27543754007A7A91 /* LoginTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTextView.swift; sourceTree = "<group>"; };
 		FF2E7B7E27544088007A7A91 /* CredentialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialView.swift; sourceTree = "<group>"; };
@@ -110,11 +118,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FF23ACBB27595A7A00E3794D /* ObservableObjects */ = {
+			isa = PBXGroup;
+			children = (
+				FF76C0CC275637DE00EF2FA1 /* Credentials.swift */,
+				FF23ACBE275A6BFA00E3794D /* QuickStatusData.swift */,
+			);
+			path = ObservableObjects;
+			sourceTree = "<group>";
+		};
 		FF2E7B8227544F10007A7A91 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
 				FF2E7B8327544F36007A7A91 /* AppColors.swift */,
 				FF76C0D927567ACB00EF2FA1 /* Loader.swift */,
+				FF23ACC0275A850900E3794D /* DoubleRounder.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -154,6 +172,7 @@
 				FFEEE6422752BD9F00CD1E9B /* App */,
 				FFEEE6432752BDA300CD1E9B /* Views */,
 				FFEEE6412752BD9200CD1E9B /* Models */,
+				FF23ACBB27595A7A00E3794D /* ObservableObjects */,
 				FFEEE6442752BDAA00CD1E9B /* Network */,
 				FF2E7B8227544F10007A7A91 /* Helper */,
 				FFEEE6452752BDB400CD1E9B /* URLs */,
@@ -192,6 +211,8 @@
 			isa = PBXGroup;
 			children = (
 				FF76C0C62755406600EF2FA1 /* LoginModel.swift */,
+				FF23ACB72759287E00E3794D /* UserDataModel.swift */,
+				FF23ACBC275A5BFC00E3794D /* DucoPriceModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -244,7 +265,6 @@
 				FF2E7B7C27543754007A7A91 /* LoginTextView.swift */,
 				FF2E7B7E27544088007A7A91 /* CredentialView.swift */,
 				FF2E7B8027544AF9007A7A91 /* ButtonView.swift */,
-				FF76C0CC275637DE00EF2FA1 /* Credentials.swift */,
 			);
 			path = "Login View";
 			sourceTree = "<group>";
@@ -439,6 +459,7 @@
 				FF23ACB42757D20100E3794D /* QuickStatusView.swift in Sources */,
 				FF76C0DE2756C62A00EF2FA1 /* UsernameTextView.swift in Sources */,
 				FF76C0D62756710300EF2FA1 /* SendFundView.swift in Sources */,
+				FF23ACC1275A850900E3794D /* DoubleRounder.swift in Sources */,
 				FFA7242D275426D5001E6440 /* LoginView.swift in Sources */,
 				FF2E7B7D27543754007A7A91 /* LoginTextView.swift in Sources */,
 				FF76C0CB27554BC100EF2FA1 /* URLs.swift in Sources */,
@@ -447,15 +468,18 @@
 				FF76C0CD275637DE00EF2FA1 /* Credentials.swift in Sources */,
 				FFEEE6182752BCDF00CD1E9B /* Duino_CoinApp.swift in Sources */,
 				FF76C0DA27567ACB00EF2FA1 /* Loader.swift in Sources */,
+				FF23ACBF275A6BFA00E3794D /* QuickStatusData.swift in Sources */,
 				FF23ACB62758100C00E3794D /* MinersListView.swift in Sources */,
 				FF76C0C92755411200EF2FA1 /* API.swift in Sources */,
 				FF76C0DC2756C18F00EF2FA1 /* ProfileView.swift in Sources */,
 				FF76C0C72755406600EF2FA1 /* LoginModel.swift in Sources */,
 				FF2E7B7B2754334A007A7A91 /* TopLogoView.swift in Sources */,
+				FF23ACBD275A5BFC00E3794D /* DucoPriceModel.swift in Sources */,
 				FF2E7B8427544F36007A7A91 /* AppColors.swift in Sources */,
 				FF2E7B7F27544088007A7A91 /* CredentialView.swift in Sources */,
 				FF76C0D02756703F00EF2FA1 /* DuinoTabView.swift in Sources */,
 				FF76C0D2275670CE00EF2FA1 /* DashboardView.swift in Sources */,
+				FF23ACB82759287E00E3794D /* UserDataModel.swift in Sources */,
 				FF2E7B8127544AF9007A7A91 /* ButtonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -14,4 +14,5 @@ extension Color {
     static let customBlue: Color = Color(red: 10/255, green: 132/255, blue: 220/255)
     static let customPurple: Color = Color(red: 191/255, green: 90/255, blue: 242/255)
     static let customIndigo: Color = Color(red: 94/255, green: 92/255, blue: 200/255)
+    static let customGray: Color = Color(red: 44/255, green: 44/255, blue: 46/255)
 }

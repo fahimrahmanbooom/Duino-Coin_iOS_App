@@ -12,8 +12,10 @@ struct QuickStatusView: View {
     
     // MARK: - Properties
     private let columns = [ GridItem(.flexible()), GridItem(.flexible()) ]
-    private let headlines = ["Total Hashrate", "DUCO Balance", "Estimated Profit", "DUCO Price"]
-    private let headLinesColor: [Color] = [.customBlue, .customGreen, .customIndigo, .customRed]
+    private let headLinesColor: [Color] = [.customRed, .customBlue, .customIndigo, .customGreen]
+    private let headlines = ["Total Hashrate", "DUCO Price", "DUCO Balance", "USD Balance"]
+
+    @Binding var quickStatusData: [String: String]
     
     // body
     var body: some View {
@@ -26,23 +28,25 @@ struct QuickStatusView: View {
                         // vstack
                         VStack {
                             // headlines
-                            Text(headlines[item])
+                            Text(self.headlines[item])
                                 .foregroundColor(.white)
                                 .font(.headline)
                                 .bold()
                                 .padding(.vertical, 5)
+                                .lineLimit(1)
                             
                             // values
-                            Text("712.21 KH/s")
+                            Text(quickStatusData[headlines[item]] ?? "")
                                 .foregroundColor(.white)
                                 .font(.subheadline)
                                 .bold()
                                 .padding(.vertical, 5)
+                                .lineLimit(1)
                         } //: vstack
                     } //: hstack
-                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    .frame(maxWidth: .infinity)
                     .padding()
-                    .background(headLinesColor[item])
+                    .background(self.headLinesColor[item])
                     .cornerRadius(10)
                 } //: for each
             } //: grid
@@ -53,9 +57,10 @@ struct QuickStatusView: View {
 
 
 // MARK: - Preview
+
 struct QuickStatusView_Previews: PreviewProvider {
     static var previews: some View {
-        QuickStatusView()
+        QuickStatusView(quickStatusData: .constant(["":""]))
             .previewLayout(.sizeThatFits)
     }
 }

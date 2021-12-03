@@ -11,7 +11,7 @@ import SwiftUI
 struct UsernameTextView: View {
     
     // MARK: - Properties
-    let isVerifiedUser: Bool = false
+    @Binding var isVerifiedUser: String
     
     // body
     var body: some View {
@@ -19,17 +19,17 @@ struct UsernameTextView: View {
         HStack {
             // text
             Text("Hi, \(UserDefaults.standard.string(forKey: "username") ?? "")")
-                .foregroundColor(.customGreen)
+                .foregroundColor(.primary)
                 .font(.title2)
                 .bold()
             
             Spacer()
         
             // image
-            Image(systemName: isVerifiedUser ? "checkmark.shield.fill" : "xmark.shield.fill")
+            Image(systemName: isVerifiedUser == "yes" ? "checkmark.shield.fill" : "xmark.shield.fill")
                 .resizable()
                 .frame(width: 20, height: 25)
-                .foregroundColor(isVerifiedUser ? .customGreen : .customRed)
+                .foregroundColor(isVerifiedUser == "yes" ? .customGreen : .customRed)
         } //: hstack
         .padding(10)
     } //: body
@@ -40,7 +40,7 @@ struct UsernameTextView: View {
 // MARK: - Preview
 struct UsernameTextView_Previews: PreviewProvider {
     static var previews: some View {
-        UsernameTextView()
+        UsernameTextView(isVerifiedUser: .constant("no"))
             .previewLayout(.sizeThatFits)
     }
 }

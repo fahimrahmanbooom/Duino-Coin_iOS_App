@@ -8,6 +8,7 @@
 import Foundation
 
 // MARK: - Login Model
+
 struct LoginModel: Codable {
     let success: Bool
 }
