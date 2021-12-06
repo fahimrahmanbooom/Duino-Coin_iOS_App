@@ -9,6 +9,7 @@ import SwiftUI
 
 // MARK: - Login Text View
 struct LoginTextView: View {
+    
     // body
     var body: some View {
         // hstack

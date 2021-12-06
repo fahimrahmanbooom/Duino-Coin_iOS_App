@@ -11,12 +11,15 @@ import SwiftUI
 struct DashboardView: View {
     
     // MARK: -  Properties
-    @State var userData = UserDataModel()
-    @State var ducoPrice = DucoPriceModel()
+    @State private var userData = UserDataModel()
+    @State private var ducoPrice = DucoPriceModel()
     
-    @State var quickStatusData = ["Total Hashrate": String(), "DUCO Price": String(), "DUCO Balance": String(), "USD Balance": String()]
+    @State private var quickStatusData = ["Total Hashrate": String(), "DUCO Price": String(), "DUCO Balance": String(), "USD Balance": String()]
     
-    @State var isVerifiedUser = String()
+    @State private var isVerifiedUser = String()
+    
+    @State private var timer = Timer.publish(every: 15, on: .main, in: .common).autoconnect()
+    
     
     // body
     var body: some View {
@@ -41,14 +44,19 @@ struct DashboardView: View {
         .task {
             await loadUserData()
             await loadDucoPrice()
+            self.timer = timer.upstream.autoconnect()
         }
-        .onTapGesture(count: 2) {
+        .onReceive(self.timer) { _ in
             Task {
                 await loadUserData()
                 await loadDucoPrice()
             }
         }
+        .onDisappear {
+            self.timer.upstream.connect().cancel()
+        }
     } //: body
+    
     
     // user data load
     private func loadUserData() async {

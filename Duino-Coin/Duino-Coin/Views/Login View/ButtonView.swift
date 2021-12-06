@@ -13,7 +13,7 @@ struct ButtonView: View {
     // MARK: - Properties
     @AppStorage("loggedIn") var loggedIn: Bool?
     
-    @State var loginModel: LoginModel?
+    @State private var loginModel: LoginModel?
     @State private var emptyFieldsAlert = false
     @State private var wrongCredentialAlert = false
     

@@ -11,7 +11,6 @@
 		FF23ACB62758100C00E3794D /* MinersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF23ACB52758100C00E3794D /* MinersListView.swift */; };
 		FF23ACB82759287E00E3794D /* UserDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF23ACB72759287E00E3794D /* UserDataModel.swift */; };
 		FF23ACBD275A5BFC00E3794D /* DucoPriceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF23ACBC275A5BFC00E3794D /* DucoPriceModel.swift */; };
-		FF23ACBF275A6BFA00E3794D /* QuickStatusData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF23ACBE275A6BFA00E3794D /* QuickStatusData.swift */; };
 		FF23ACC1275A850900E3794D /* DoubleRounder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF23ACC0275A850900E3794D /* DoubleRounder.swift */; };
 		FF2E7B7B2754334A007A7A91 /* TopLogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2E7B7A2754334A007A7A91 /* TopLogoView.swift */; };
 		FF2E7B7D27543754007A7A91 /* LoginTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2E7B7C27543754007A7A91 /* LoginTextView.swift */; };
@@ -61,7 +60,6 @@
 		FF23ACB52758100C00E3794D /* MinersListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinersListView.swift; sourceTree = "<group>"; };
 		FF23ACB72759287E00E3794D /* UserDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataModel.swift; sourceTree = "<group>"; };
 		FF23ACBC275A5BFC00E3794D /* DucoPriceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DucoPriceModel.swift; sourceTree = "<group>"; };
-		FF23ACBE275A6BFA00E3794D /* QuickStatusData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickStatusData.swift; sourceTree = "<group>"; };
 		FF23ACC0275A850900E3794D /* DoubleRounder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleRounder.swift; sourceTree = "<group>"; };
 		FF2E7B7A2754334A007A7A91 /* TopLogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopLogoView.swift; sourceTree = "<group>"; };
 		FF2E7B7C27543754007A7A91 /* LoginTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTextView.swift; sourceTree = "<group>"; };
@@ -122,7 +120,6 @@
 			isa = PBXGroup;
 			children = (
 				FF76C0CC275637DE00EF2FA1 /* Credentials.swift */,
-				FF23ACBE275A6BFA00E3794D /* QuickStatusData.swift */,
 			);
 			path = ObservableObjects;
 			sourceTree = "<group>";
@@ -468,7 +465,6 @@
 				FF76C0CD275637DE00EF2FA1 /* Credentials.swift in Sources */,
 				FFEEE6182752BCDF00CD1E9B /* Duino_CoinApp.swift in Sources */,
 				FF76C0DA27567ACB00EF2FA1 /* Loader.swift in Sources */,
-				FF23ACBF275A6BFA00E3794D /* QuickStatusData.swift in Sources */,
 				FF23ACB62758100C00E3794D /* MinersListView.swift in Sources */,
 				FF76C0C92755411200EF2FA1 /* API.swift in Sources */,
 				FF76C0DC2756C18F00EF2FA1 /* ProfileView.swift in Sources */,
