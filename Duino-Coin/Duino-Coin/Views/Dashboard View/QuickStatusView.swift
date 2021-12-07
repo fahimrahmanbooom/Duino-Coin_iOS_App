@@ -50,6 +50,7 @@ struct QuickStatusView: View {
                     .cornerRadius(10)
                 } //: for each
             } //: grid
+            .shadow(color: .primary, radius: 0.4)
             .padding(10)
     } //: body
 }

@@ -48,7 +48,7 @@ struct MinersListView: View {
                             // hstack
                             HStack {
                                 // logo
-                                Image(systemName: "cpu")
+                                Image(systemName: "hammer")
                                     .resizable()
                                     .frame(width: 25, height: 25)
                                     .foregroundColor(.white)
@@ -103,6 +103,7 @@ struct MinersListView: View {
                     .cornerRadius(10)
                 } //: for each
             } //: grid
+            .shadow(color: .primary, radius: 0.4)
             .padding(10)
         } //: vstack
     } //: body

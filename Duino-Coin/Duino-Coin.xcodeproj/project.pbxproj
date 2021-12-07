@@ -24,11 +24,19 @@
 		FF76C0D02756703F00EF2FA1 /* DuinoTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF76C0CF2756703F00EF2FA1 /* DuinoTabView.swift */; };
 		FF76C0D2275670CE00EF2FA1 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF76C0D1275670CE00EF2FA1 /* DashboardView.swift */; };
 		FF76C0D4275670E000EF2FA1 /* StatisticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF76C0D3275670E000EF2FA1 /* StatisticsView.swift */; };
-		FF76C0D62756710300EF2FA1 /* SendFundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF76C0D52756710300EF2FA1 /* SendFundView.swift */; };
 		FF76C0D82756711500EF2FA1 /* TransactionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF76C0D72756711500EF2FA1 /* TransactionsView.swift */; };
 		FF76C0DA27567ACB00EF2FA1 /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF76C0D927567ACB00EF2FA1 /* Loader.swift */; };
 		FF76C0DC2756C18F00EF2FA1 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF76C0DB2756C18F00EF2FA1 /* ProfileView.swift */; };
 		FF76C0DE2756C62A00EF2FA1 /* UsernameTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF76C0DD2756C62A00EF2FA1 /* UsernameTextView.swift */; };
+		FF9DEAEE275E67A200F3D7AD /* StatisticsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9DEAED275E67A200F3D7AD /* StatisticsModel.swift */; };
+		FF9DEAF0275E9A8D00F3D7AD /* NetHashrateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9DEAEF275E9A8D00F3D7AD /* NetHashrateView.swift */; };
+		FF9DEAF2275EB09B00F3D7AD /* ServerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9DEAF1275EB09B00F3D7AD /* ServerView.swift */; };
+		FF9DEAF4275EC16D00F3D7AD /* EnergyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9DEAF3275EC16D00F3D7AD /* EnergyView.swift */; };
+		FF9DEAF6275EC78500F3D7AD /* RegisteredUsersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9DEAF5275EC78500F3D7AD /* RegisteredUsersView.swift */; };
+		FF9DEAF8275ECABC00F3D7AD /* ActiveConnectionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9DEAF7275ECABC00F3D7AD /* ActiveConnectionsView.swift */; };
+		FF9DEAFA275ECDA200F3D7AD /* CurrentDifficultyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9DEAF9275ECDA200F3D7AD /* CurrentDifficultyView.swift */; };
+		FF9DEAFC275ED6D900F3D7AD /* TotalMinedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9DEAFB275ED6D800F3D7AD /* TotalMinedView.swift */; };
+		FF9DEAFE275EDCCC00F3D7AD /* MinerDistributionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9DEAFD275EDCCC00F3D7AD /* MinerDistributionView.swift */; };
 		FFA7242D275426D5001E6440 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA7242C275426D5001E6440 /* LoginView.swift */; };
 		FFEEE6182752BCDF00CD1E9B /* Duino_CoinApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEEE6172752BCDF00CD1E9B /* Duino_CoinApp.swift */; };
 		FFEEE61C2752BCE100CD1E9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFEEE61B2752BCE100CD1E9B /* Assets.xcassets */; };
@@ -74,11 +82,19 @@
 		FF76C0CF2756703F00EF2FA1 /* DuinoTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuinoTabView.swift; sourceTree = "<group>"; };
 		FF76C0D1275670CE00EF2FA1 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		FF76C0D3275670E000EF2FA1 /* StatisticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsView.swift; sourceTree = "<group>"; };
-		FF76C0D52756710300EF2FA1 /* SendFundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendFundView.swift; sourceTree = "<group>"; };
 		FF76C0D72756711500EF2FA1 /* TransactionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsView.swift; sourceTree = "<group>"; };
 		FF76C0D927567ACB00EF2FA1 /* Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
 		FF76C0DB2756C18F00EF2FA1 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		FF76C0DD2756C62A00EF2FA1 /* UsernameTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsernameTextView.swift; sourceTree = "<group>"; };
+		FF9DEAED275E67A200F3D7AD /* StatisticsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsModel.swift; sourceTree = "<group>"; };
+		FF9DEAEF275E9A8D00F3D7AD /* NetHashrateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetHashrateView.swift; sourceTree = "<group>"; };
+		FF9DEAF1275EB09B00F3D7AD /* ServerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerView.swift; sourceTree = "<group>"; };
+		FF9DEAF3275EC16D00F3D7AD /* EnergyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnergyView.swift; sourceTree = "<group>"; };
+		FF9DEAF5275EC78500F3D7AD /* RegisteredUsersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisteredUsersView.swift; sourceTree = "<group>"; };
+		FF9DEAF7275ECABC00F3D7AD /* ActiveConnectionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveConnectionsView.swift; sourceTree = "<group>"; };
+		FF9DEAF9275ECDA200F3D7AD /* CurrentDifficultyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentDifficultyView.swift; sourceTree = "<group>"; };
+		FF9DEAFB275ED6D800F3D7AD /* TotalMinedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalMinedView.swift; sourceTree = "<group>"; };
+		FF9DEAFD275EDCCC00F3D7AD /* MinerDistributionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinerDistributionView.swift; sourceTree = "<group>"; };
 		FFA7242C275426D5001E6440 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		FFEEE6142752BCDF00CD1E9B /* Duino-Coin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Duino-Coin.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFEEE6172752BCDF00CD1E9B /* Duino_CoinApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Duino_CoinApp.swift; sourceTree = "<group>"; };
@@ -210,6 +226,7 @@
 				FF76C0C62755406600EF2FA1 /* LoginModel.swift */,
 				FF23ACB72759287E00E3794D /* UserDataModel.swift */,
 				FF23ACBC275A5BFC00E3794D /* DucoPriceModel.swift */,
+				FF9DEAED275E67A200F3D7AD /* StatisticsModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -229,7 +246,6 @@
 				FF76C0CE2756701C00EF2FA1 /* Tab View */,
 				FFEEE6472752BEFC00CD1E9B /* Dashboard View */,
 				FFEEE6482752BF0D00CD1E9B /* Statistics View */,
-				FFEEE6492752BF1C00CD1E9B /* SendFund View */,
 				FFEEE64A2752BF3A00CD1E9B /* Transactions View */,
 				FFEEE6502752C15E00CD1E9B /* Profile View */,
 				FFEEE64E2752C07300CD1E9B /* PasswordUpdate View */,
@@ -281,16 +297,16 @@
 			isa = PBXGroup;
 			children = (
 				FF76C0D3275670E000EF2FA1 /* StatisticsView.swift */,
+				FF9DEAEF275E9A8D00F3D7AD /* NetHashrateView.swift */,
+				FF9DEAF1275EB09B00F3D7AD /* ServerView.swift */,
+				FF9DEAF3275EC16D00F3D7AD /* EnergyView.swift */,
+				FF9DEAF5275EC78500F3D7AD /* RegisteredUsersView.swift */,
+				FF9DEAF7275ECABC00F3D7AD /* ActiveConnectionsView.swift */,
+				FF9DEAF9275ECDA200F3D7AD /* CurrentDifficultyView.swift */,
+				FF9DEAFB275ED6D800F3D7AD /* TotalMinedView.swift */,
+				FF9DEAFD275EDCCC00F3D7AD /* MinerDistributionView.swift */,
 			);
 			path = "Statistics View";
-			sourceTree = "<group>";
-		};
-		FFEEE6492752BF1C00CD1E9B /* SendFund View */ = {
-			isa = PBXGroup;
-			children = (
-				FF76C0D52756710300EF2FA1 /* SendFundView.swift */,
-			);
-			path = "SendFund View";
 			sourceTree = "<group>";
 		};
 		FFEEE64A2752BF3A00CD1E9B /* Transactions View */ = {
@@ -453,29 +469,37 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF9DEAF2275EB09B00F3D7AD /* ServerView.swift in Sources */,
 				FF23ACB42757D20100E3794D /* QuickStatusView.swift in Sources */,
 				FF76C0DE2756C62A00EF2FA1 /* UsernameTextView.swift in Sources */,
-				FF76C0D62756710300EF2FA1 /* SendFundView.swift in Sources */,
 				FF23ACC1275A850900E3794D /* DoubleRounder.swift in Sources */,
+				FF9DEAFC275ED6D900F3D7AD /* TotalMinedView.swift in Sources */,
 				FFA7242D275426D5001E6440 /* LoginView.swift in Sources */,
 				FF2E7B7D27543754007A7A91 /* LoginTextView.swift in Sources */,
 				FF76C0CB27554BC100EF2FA1 /* URLs.swift in Sources */,
+				FF9DEAFA275ECDA200F3D7AD /* CurrentDifficultyView.swift in Sources */,
 				FF76C0D4275670E000EF2FA1 /* StatisticsView.swift in Sources */,
 				FF76C0D82756711500EF2FA1 /* TransactionsView.swift in Sources */,
 				FF76C0CD275637DE00EF2FA1 /* Credentials.swift in Sources */,
+				FF9DEAFE275EDCCC00F3D7AD /* MinerDistributionView.swift in Sources */,
 				FFEEE6182752BCDF00CD1E9B /* Duino_CoinApp.swift in Sources */,
+				FF9DEAF0275E9A8D00F3D7AD /* NetHashrateView.swift in Sources */,
 				FF76C0DA27567ACB00EF2FA1 /* Loader.swift in Sources */,
+				FF9DEAF6275EC78500F3D7AD /* RegisteredUsersView.swift in Sources */,
 				FF23ACB62758100C00E3794D /* MinersListView.swift in Sources */,
 				FF76C0C92755411200EF2FA1 /* API.swift in Sources */,
 				FF76C0DC2756C18F00EF2FA1 /* ProfileView.swift in Sources */,
 				FF76C0C72755406600EF2FA1 /* LoginModel.swift in Sources */,
 				FF2E7B7B2754334A007A7A91 /* TopLogoView.swift in Sources */,
+				FF9DEAF8275ECABC00F3D7AD /* ActiveConnectionsView.swift in Sources */,
 				FF23ACBD275A5BFC00E3794D /* DucoPriceModel.swift in Sources */,
+				FF9DEAF4275EC16D00F3D7AD /* EnergyView.swift in Sources */,
 				FF2E7B8427544F36007A7A91 /* AppColors.swift in Sources */,
 				FF2E7B7F27544088007A7A91 /* CredentialView.swift in Sources */,
 				FF76C0D02756703F00EF2FA1 /* DuinoTabView.swift in Sources */,
 				FF76C0D2275670CE00EF2FA1 /* DashboardView.swift in Sources */,
 				FF23ACB82759287E00E3794D /* UserDataModel.swift in Sources */,
+				FF9DEAEE275E67A200F3D7AD /* StatisticsModel.swift in Sources */,
 				FF2E7B8127544AF9007A7A91 /* ButtonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -656,7 +680,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -687,7 +711,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

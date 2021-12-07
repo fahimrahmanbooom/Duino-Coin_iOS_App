@@ -11,6 +11,7 @@ import Foundation
 // MARK: - Duco Price Model
 
 struct DucoPriceModel: Codable {
+    
     var ducoPriceInUSD: Double?
     
     enum CodingKeys: String, CodingKey {

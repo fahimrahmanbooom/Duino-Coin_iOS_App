@@ -18,7 +18,7 @@ struct DashboardView: View {
     
     @State private var isVerifiedUser = String()
     
-    @State private var timer = Timer.publish(every: 15, on: .main, in: .common).autoconnect()
+    @State private var timer = Timer.publish(every: 10, on: .main, in: .common).autoconnect()
     
     
     // body
@@ -60,6 +60,7 @@ struct DashboardView: View {
     
     // user data load
     private func loadUserData() async {
+    
         await Networking.getRequest(url: URL.userDataURL(username: UserDefaults.standard.string(forKey: "username") ?? ""), expecting: UserDataModel.self, completion: { result in
             do {
                 try self.userData = result.get()
@@ -87,6 +88,7 @@ struct DashboardView: View {
     
     // load duco price
     private func loadDucoPrice() async {
+        
         await Networking.getRequest(url: URL.statisticsURL, expecting: DucoPriceModel.self, completion: { result in
             do {
                 try ducoPrice = result.get()

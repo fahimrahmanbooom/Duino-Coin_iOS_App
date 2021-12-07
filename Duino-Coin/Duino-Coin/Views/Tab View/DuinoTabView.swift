@@ -18,8 +18,6 @@ struct DuinoTabView: View {
                 .tabItem { Label("Dashboard", systemImage: "text.redaction") }
             StatisticsView()
                 .tabItem { Label("Statistics", systemImage: "chart.xyaxis.line") }
-            SendFundView()
-                .tabItem { Label("Send Fund", systemImage: "menubar.arrow.up.rectangle") }
             TransactionsView()
                 .tabItem { Label("Transactions", systemImage: "arrow.left.arrow.right") }
             ProfileView()
