@@ -33,7 +33,7 @@ struct MinerDistributionView: View {
                     Image(systemName: "hammer")
                         .resizable()
                         .frame(width: 35, height: 35)
-                        .foregroundColor(.white)
+                        .foregroundColor(.customOrange)
                         .font(Font.title.weight(.thin))
                         .padding([.leading, .top, .bottom])
                     
@@ -47,7 +47,7 @@ struct MinerDistributionView: View {
                     
                     // quantity
                     Text("\(minerDistribution[item] ?? 0)")
-                        .foregroundColor(.white)
+                        .foregroundColor(.customOrange)
                         .fontWeight(.regular)
                         .padding([.trailing, .top, .bottom])
                     
@@ -55,9 +55,8 @@ struct MinerDistributionView: View {
             } // foreach
         } //: vstack
         .frame(maxWidth: .infinity)
-        .background(RadialGradient(gradient: Gradient(colors: [.customRed, .black]), center: .center, startRadius: 2, endRadius: 1000))
+        .background(Color.customGray)
         .cornerRadius(10)
-        .shadow(color: .primary, radius: 0.4)
         .padding([.horizontal, .bottom], 10)
     } // body
 }

@@ -38,4 +38,13 @@ extension URL {
     
     // duco statistics
     static let statisticsURL = URL(string: "https://server.duinocoin.com/api.json")
+    
+    
+    // user transactions
+    static func userTransactionsURL(username: String) -> URL? {
+        if let url = URL(string: "\(baseURLString)user_transactions/\(username)") {
+            return url
+        }
+        return nil
+    }
 }

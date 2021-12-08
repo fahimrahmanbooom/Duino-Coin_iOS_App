@@ -19,7 +19,7 @@ struct UsernameTextView: View {
         HStack {
             // text
             Text("Hi, \(UserDefaults.standard.string(forKey: "username") ?? "")")
-                .foregroundColor(.primary)
+                .foregroundColor(.customOrange)
                 .font(.title2)
                 .bold()
             

@@ -24,14 +24,14 @@ struct MinersListView: View {
             // hstack
             HStack {
                 Text("Miners")
-                    .foregroundColor(.primary)
+                    .foregroundColor(.customOrange)
                     .font(.title3)
                     .bold()
                 
                 Spacer()
                 
                 Text("Total: \(self.userData.result?.miners?.count ?? 0)")
-                    .foregroundColor(.primary)
+                    .foregroundColor(.white)
                     .font(.title3)
                     .bold()
             } //: hstack
@@ -51,7 +51,7 @@ struct MinersListView: View {
                                 Image(systemName: "hammer")
                                     .resizable()
                                     .frame(width: 25, height: 25)
-                                    .foregroundColor(.white)
+                                    .foregroundColor(.customOrange)
                                 
                                 // miner name
                                 Text(self.userData.result?.miners?[item].identifier ?? "")
@@ -99,11 +99,10 @@ struct MinersListView: View {
                     } //: hstack
                     .frame(maxWidth: .infinity)
                     .padding()
-                    .background(RadialGradient(gradient: Gradient(colors: [.customRed, .black]), center: .center, startRadius: 2, endRadius: 450))
+                    .background(Color.customGray)
                     .cornerRadius(10)
                 } //: for each
             } //: grid
-            .shadow(color: .primary, radius: 0.4)
             .padding(10)
         } //: vstack
     } //: body

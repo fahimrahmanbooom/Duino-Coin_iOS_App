@@ -30,7 +30,7 @@ struct NetHashrateView: View {
                 
                 // subtitle
                 Text(netHashrate)
-                    .foregroundColor(.white)
+                    .foregroundColor(.customOrange)
                     .font(.title)
                     .fontWeight(.bold)
                     .padding(.horizontal)
@@ -47,9 +47,8 @@ struct NetHashrateView: View {
                 .font(Font.title.weight(.thin))
                 .padding(.horizontal)
         } // HStack
-        .background(RadialGradient(gradient: Gradient(colors: [.customRed, .black]), center: .center, startRadius: 2, endRadius: 450))
+        .background(Color.customGray)
         .cornerRadius(10)
-        .shadow(color: .primary, radius: 0.4)
         .padding(.horizontal, 10)
         //.padding(.vertical)
     } //: body

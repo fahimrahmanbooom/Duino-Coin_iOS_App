@@ -43,6 +43,7 @@ struct ServerView: View {
             
             Spacer()
             
+            
             // hstack
             HStack {
                 // vstack
@@ -67,13 +68,13 @@ struct ServerView: View {
                 VStack(alignment: .trailing, spacing: 1) {
                     
                     Text(serverVersion)
-                        .foregroundColor(.white)
+                        .foregroundColor(.customOrange)
                         .fontWeight(.regular)
                     Text("\(serverCPU) %")
-                        .foregroundColor(.white)
+                        .foregroundColor(.customOrange)
                         .fontWeight(.regular)
                     Text("\(serverRAM) %")
-                        .foregroundColor(.white)
+                        .foregroundColor(.customOrange)
                         .fontWeight(.regular)
                     
                 } //: vstack
@@ -81,9 +82,8 @@ struct ServerView: View {
             } //: hstack
         }
         .frame(width: UIScreen.main.bounds.width / 2.2, height: UIScreen.main.bounds.width / 2.2)
-        .background(RadialGradient(gradient: Gradient(colors: [.customRed, .black]), center: .center, startRadius: 2, endRadius: 450))
+        .background(Color.customGray)
         .cornerRadius(10)
-        .shadow(color: .primary, radius: 0.4)
     } // body
 }
 

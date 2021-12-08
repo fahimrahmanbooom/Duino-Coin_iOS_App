@@ -12,7 +12,7 @@ struct QuickStatusView: View {
     
     // MARK: - Properties
     private let columns = [ GridItem(.flexible()), GridItem(.flexible()) ]
-    private let headLinesColor: [Color] = [.customRed, .customBlue, .customIndigo, .customGreen]
+    
     private let headlines = ["Total Hashrate", "DUCO Price", "DUCO Balance", "USD Balance"]
 
     @Binding var quickStatusData: [String: String]
@@ -29,7 +29,7 @@ struct QuickStatusView: View {
                         VStack {
                             // headlines
                             Text(self.headlines[item])
-                                .foregroundColor(.white)
+                                .foregroundColor(.customOrange)
                                 .font(.headline)
                                 .bold()
                                 .padding(.vertical, 5)
@@ -46,11 +46,10 @@ struct QuickStatusView: View {
                     } //: hstack
                     .frame(maxWidth: .infinity)
                     .padding()
-                    .background(self.headLinesColor[item])
+                    .background(Color.customGray)
                     .cornerRadius(10)
                 } //: for each
             } //: grid
-            .shadow(color: .primary, radius: 0.4)
             .padding(10)
     } //: body
 }
@@ -62,6 +61,7 @@ struct QuickStatusView: View {
 struct QuickStatusView_Previews: PreviewProvider {
     static var previews: some View {
         QuickStatusView(quickStatusData: .constant(["":""]))
+            .preferredColorScheme(.dark)
             .previewLayout(.sizeThatFits)
     }
 }

@@ -11,7 +11,7 @@ import Foundation
 
 struct UserDataModel: Codable {
     
-    var result: Response?
+    var result: UserDataResponse?
     var success: Bool?
     
     enum CodingKeys: String, CodingKey {
@@ -21,7 +21,7 @@ struct UserDataModel: Codable {
 }
 
 // MARK: - Result
-struct Response: Codable {
+struct UserDataResponse: Codable {
     var balance: Balance?
     var miners: [Miner]?
 }

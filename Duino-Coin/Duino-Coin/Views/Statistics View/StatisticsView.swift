@@ -57,6 +57,7 @@ struct StatisticsView: View {
                     // miner distribution
                     MinerDistributionView(minerDistribution: $minerDistribution)
                 } //: vstack
+                .drawingGroup()
             } //: scroll view
             .clipped()
             .navigationBarHidden(true)

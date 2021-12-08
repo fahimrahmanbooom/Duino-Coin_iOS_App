@@ -37,6 +37,7 @@ struct DashboardView: View {
                     Spacer()
                     MinersListView(userData: $userData)
                 } //: vstack
+                .drawingGroup()
             } //: scroll view
             .clipped()
             .navigationBarHidden(true)
@@ -126,5 +127,6 @@ extension DashboardView {
 struct DashboardView_Previews: PreviewProvider {
     static var previews: some View {
         DashboardView()
+            .preferredColorScheme(.dark)
     }
 }

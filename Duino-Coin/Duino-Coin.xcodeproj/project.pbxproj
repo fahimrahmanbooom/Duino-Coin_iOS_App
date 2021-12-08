@@ -17,6 +17,9 @@
 		FF2E7B7F27544088007A7A91 /* CredentialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2E7B7E27544088007A7A91 /* CredentialView.swift */; };
 		FF2E7B8127544AF9007A7A91 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2E7B8027544AF9007A7A91 /* ButtonView.swift */; };
 		FF2E7B8427544F36007A7A91 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2E7B8327544F36007A7A91 /* AppColors.swift */; };
+		FF3AB2BE275FC31F00E04FCA /* TransactionsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3AB2BD275FC31F00E04FCA /* TransactionsRowView.swift */; };
+		FF3AB2C2275FC46200E04FCA /* TransactionsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3AB2C1275FC46200E04FCA /* TransactionsModel.swift */; };
+		FF5BC95227605F6B004B1FAC /* DataCache in Frameworks */ = {isa = PBXBuildFile; productRef = FF5BC95127605F6B004B1FAC /* DataCache */; };
 		FF76C0C72755406600EF2FA1 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF76C0C62755406600EF2FA1 /* LoginModel.swift */; };
 		FF76C0C92755411200EF2FA1 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF76C0C82755411200EF2FA1 /* API.swift */; };
 		FF76C0CB27554BC100EF2FA1 /* URLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF76C0CA27554BC100EF2FA1 /* URLs.swift */; };
@@ -75,6 +78,8 @@
 		FF2E7B8027544AF9007A7A91 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		FF2E7B8327544F36007A7A91 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
 		FF2E7B87275471BA007A7A91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		FF3AB2BD275FC31F00E04FCA /* TransactionsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsRowView.swift; sourceTree = "<group>"; };
+		FF3AB2C1275FC46200E04FCA /* TransactionsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsModel.swift; sourceTree = "<group>"; };
 		FF76C0C62755406600EF2FA1 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		FF76C0C82755411200EF2FA1 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		FF76C0CA27554BC100EF2FA1 /* URLs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLs.swift; sourceTree = "<group>"; };
@@ -112,6 +117,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF5BC95227605F6B004B1FAC /* DataCache in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,6 +233,7 @@
 				FF23ACB72759287E00E3794D /* UserDataModel.swift */,
 				FF23ACBC275A5BFC00E3794D /* DucoPriceModel.swift */,
 				FF9DEAED275E67A200F3D7AD /* StatisticsModel.swift */,
+				FF3AB2C1275FC46200E04FCA /* TransactionsModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -313,6 +320,7 @@
 			isa = PBXGroup;
 			children = (
 				FF76C0D72756711500EF2FA1 /* TransactionsView.swift */,
+				FF3AB2BD275FC31F00E04FCA /* TransactionsRowView.swift */,
 			);
 			path = "Transactions View";
 			sourceTree = "<group>";
@@ -355,6 +363,9 @@
 			dependencies = (
 			);
 			name = "Duino-Coin";
+			packageProductDependencies = (
+				FF5BC95127605F6B004B1FAC /* DataCache */,
+			);
 			productName = "Duino-Coin";
 			productReference = FFEEE6142752BCDF00CD1E9B /* Duino-Coin.app */;
 			productType = "com.apple.product-type.application";
@@ -427,6 +438,9 @@
 				Base,
 			);
 			mainGroup = FFEEE60B2752BCDE00CD1E9B;
+			packageReferences = (
+				FF5BC95027605F6B004B1FAC /* XCRemoteSwiftPackageReference "DataCache" */,
+			);
 			productRefGroup = FFEEE6152752BCDF00CD1E9B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -479,12 +493,14 @@
 				FF76C0CB27554BC100EF2FA1 /* URLs.swift in Sources */,
 				FF9DEAFA275ECDA200F3D7AD /* CurrentDifficultyView.swift in Sources */,
 				FF76C0D4275670E000EF2FA1 /* StatisticsView.swift in Sources */,
+				FF3AB2C2275FC46200E04FCA /* TransactionsModel.swift in Sources */,
 				FF76C0D82756711500EF2FA1 /* TransactionsView.swift in Sources */,
 				FF76C0CD275637DE00EF2FA1 /* Credentials.swift in Sources */,
 				FF9DEAFE275EDCCC00F3D7AD /* MinerDistributionView.swift in Sources */,
 				FFEEE6182752BCDF00CD1E9B /* Duino_CoinApp.swift in Sources */,
 				FF9DEAF0275E9A8D00F3D7AD /* NetHashrateView.swift in Sources */,
 				FF76C0DA27567ACB00EF2FA1 /* Loader.swift in Sources */,
+				FF3AB2BE275FC31F00E04FCA /* TransactionsRowView.swift in Sources */,
 				FF9DEAF6275EC78500F3D7AD /* RegisteredUsersView.swift in Sources */,
 				FF23ACB62758100C00E3794D /* MinersListView.swift in Sources */,
 				FF76C0C92755411200EF2FA1 /* API.swift in Sources */,
@@ -849,6 +865,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FF5BC95027605F6B004B1FAC /* XCRemoteSwiftPackageReference "DataCache" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/huynguyencong/DataCache.git";
+			requirement = {
+				kind = exactVersion;
+				version = 1.6.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FF5BC95127605F6B004B1FAC /* DataCache */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FF5BC95027605F6B004B1FAC /* XCRemoteSwiftPackageReference "DataCache" */;
+			productName = DataCache;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FFEEE60C2752BCDF00CD1E9B /* Project object */;
 }

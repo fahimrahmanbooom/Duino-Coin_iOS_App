@@ -11,14 +11,16 @@ import SwiftUI
 struct Duino_CoinApp: App {
     
     @AppStorage("loggedIn") var loggedIn: Bool = false
-    
+
     var body: some Scene {
         WindowGroup {
             if !loggedIn {
                 LoginView()
+                    .environment(\.colorScheme, .dark)
             }
             else {
                 DuinoTabView()
+                    .environment(\.colorScheme, .dark)
             }
         }
     }
