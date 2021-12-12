@@ -1,5 +1,5 @@
 
-![N|Solid](https://github.com/revoxhere/duino-coin/raw/master/Resources/ducobanner.png?raw=false)
+![N|Solid](https://github.com/revoxhere/duino-coin/raw/master/Resources/ducobanner.png?raw=true)
 
 # Duino-Coin iOS App (Version 1.0)
 ### Developed and Maintained By: Fahim Rahman (https://github.com/fahimrahmanbooom)
@@ -61,6 +61,20 @@ Duino-Coin is a coin that can be mined with Arduinos, ESP8266/32 boards, Raspber
 
 - Register:
   Go here: https://wallet.duinocoin.com/register.html
+
+## Screenshots:
+Login | Dashboard
+:-------------------------:|:-------------------------:
+![](https://i.postimg.cc/YSqBYgmM/1.png)  |  ![](https://i.postimg.cc/L5Pc23GB/2.png)
+
+Statistics | Transactions
+:-------------------------:|:-------------------------:
+![](https://i.postimg.cc/RFykkDpZ/3.png)  |  ![](https://i.postimg.cc/ZRWkDScQ/4.png)
+
+Profile | :)
+:-------------------------:|:-------------------------:
+![](https://i.postimg.cc/zftZjBnW/5.png)
+
 
 ## License
 ### MIT
