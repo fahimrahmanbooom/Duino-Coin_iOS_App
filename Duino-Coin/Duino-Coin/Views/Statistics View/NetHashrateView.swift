@@ -22,7 +22,7 @@ struct NetHashrateView: View {
                 
                 // title
                 Text("Net Hashrate")
-                    .foregroundColor(.white)
+                    .foregroundColor(.black)
                     .font(.title2)
                     .fontWeight(.regular)
                     .padding(.horizontal)
@@ -43,7 +43,7 @@ struct NetHashrateView: View {
             Image(systemName: "speedometer")
                 .resizable()
                 .frame(width: UIScreen.main.bounds.width / 5, height: UIScreen.main.bounds.width / 5)
-                .foregroundColor(.white)
+                .foregroundColor(.black)
                 .font(Font.title.weight(.thin))
                 .padding(.horizontal)
         } // HStack

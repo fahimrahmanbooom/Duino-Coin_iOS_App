@@ -31,7 +31,7 @@ struct MinersListView: View {
                 Spacer()
                 
                 Text("Total: \(self.userData.result?.miners?.count ?? 0)")
-                    .foregroundColor(.white)
+                    .foregroundColor(.black)
                     .font(.title3)
                     .bold()
             } //: hstack
@@ -55,7 +55,7 @@ struct MinersListView: View {
                                 
                                 // miner name
                                 Text(self.userData.result?.miners?[item].identifier ?? "")
-                                    .foregroundColor(.white)
+                                    .foregroundColor(.black)
                                     .font(.title2)
                                     .bold()
                                     .padding(.vertical, 5)
@@ -63,7 +63,7 @@ struct MinersListView: View {
                             
                             // pool
                             Text("Pool: \(self.userData.result?.miners?[item].pool ?? "")")
-                                .foregroundColor(.white)
+                                .foregroundColor(.black)
                                 .font(.caption)
                                 .bold()
                                 .padding(.vertical, 5)
@@ -75,21 +75,21 @@ struct MinersListView: View {
                         VStack(alignment: .trailing, spacing: 1) {
                             // hashrate
                             Text("HR: \(furnishedHR(hr: self.userData.result?.miners?[item].hashrate ?? 0.0))")
-                                .foregroundColor(.white)
+                                .foregroundColor(.black)
                                 .font(.headline)
                                 .bold()
                                 .padding(.vertical, 5)
                             
                             // diff
                             Text("Diff: \(self.userData.result?.miners?[item].diff ?? 0)")
-                                .foregroundColor(.white)
+                                .foregroundColor(.black)
                                 .font(.caption)
                                 .bold()
                                 .padding(.vertical, 5)
                             
                             // accept / reject
                             Text("A/R: \(self.userData.result?.miners?[item].accepted ?? 0)/\(self.userData.result?.miners?[item].rejected ?? 0)")
-                                .foregroundColor(.white)
+                                .foregroundColor(.black)
                                 .font(.caption)
                                 .bold()
                                 .padding(.vertical, 5)

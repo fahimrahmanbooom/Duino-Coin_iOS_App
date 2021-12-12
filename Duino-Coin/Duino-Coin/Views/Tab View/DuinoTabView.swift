@@ -9,7 +9,11 @@ import SwiftUI
 
 
 // MARK: - Duino Tab View
+
 struct DuinoTabView: View {
+    
+    // MARK: - Properties
+    
     // body
     var body: some View {
         // tab view
@@ -33,6 +37,6 @@ struct DuinoTabView: View {
 struct TabView_Previews: PreviewProvider {
     static var previews: some View {
         DuinoTabView()
-            .preferredColorScheme(.dark)
+        
     }
 }

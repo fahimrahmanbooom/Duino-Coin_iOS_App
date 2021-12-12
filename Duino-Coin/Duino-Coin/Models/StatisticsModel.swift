@@ -12,7 +12,7 @@ import Foundation
 struct StatisticsModel: Codable {
     
     var activeConnections: Int?
-    var allTimeMinedDUCO: Double? //
+    var allTimeMinedDUCO: Double?
     var currentDifficulty: Int?
     var ducoS1Hashrate: String?
     var netEnergyUsage: String?
@@ -20,7 +20,7 @@ struct StatisticsModel: Codable {
     var serverCPUUsage: Double?
     var serverRAMUsage: Double?
     var serverVersion: Double?
-    var minerDistribution: [String: Int]? //
+    var minerDistribution: [String: Int]?
     
     
     enum CodingKeys: String, CodingKey {

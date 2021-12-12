@@ -20,6 +20,7 @@
 		FF3AB2BE275FC31F00E04FCA /* TransactionsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3AB2BD275FC31F00E04FCA /* TransactionsRowView.swift */; };
 		FF3AB2C2275FC46200E04FCA /* TransactionsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3AB2C1275FC46200E04FCA /* TransactionsModel.swift */; };
 		FF5BC95227605F6B004B1FAC /* DataCache in Frameworks */ = {isa = PBXBuildFile; productRef = FF5BC95127605F6B004B1FAC /* DataCache */; };
+		FF5BC9562760EC06004B1FAC /* ImageAndNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5BC9552760EC06004B1FAC /* ImageAndNameView.swift */; };
 		FF76C0C72755406600EF2FA1 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF76C0C62755406600EF2FA1 /* LoginModel.swift */; };
 		FF76C0C92755411200EF2FA1 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF76C0C82755411200EF2FA1 /* API.swift */; };
 		FF76C0CB27554BC100EF2FA1 /* URLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF76C0CA27554BC100EF2FA1 /* URLs.swift */; };
@@ -80,6 +81,7 @@
 		FF2E7B87275471BA007A7A91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		FF3AB2BD275FC31F00E04FCA /* TransactionsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsRowView.swift; sourceTree = "<group>"; };
 		FF3AB2C1275FC46200E04FCA /* TransactionsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsModel.swift; sourceTree = "<group>"; };
+		FF5BC9552760EC06004B1FAC /* ImageAndNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageAndNameView.swift; sourceTree = "<group>"; };
 		FF76C0C62755406600EF2FA1 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		FF76C0C82755411200EF2FA1 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		FF76C0CA27554BC100EF2FA1 /* URLs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLs.swift; sourceTree = "<group>"; };
@@ -154,6 +156,14 @@
 				FF23ACC0275A850900E3794D /* DoubleRounder.swift */,
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		FF7525CD27658A2800FDA531 /* TopLogoView */ = {
+			isa = PBXGroup;
+			children = (
+				FF2E7B7A2754334A007A7A91 /* TopLogoView.swift */,
+			);
+			path = TopLogoView;
 			sourceTree = "<group>";
 		};
 		FF76C0CE2756701C00EF2FA1 /* Tab View */ = {
@@ -249,14 +259,13 @@
 		FFEEE6432752BDA300CD1E9B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				FF7525CD27658A2800FDA531 /* TopLogoView */,
 				FFEEE6462752BE0F00CD1E9B /* Login View */,
 				FF76C0CE2756701C00EF2FA1 /* Tab View */,
 				FFEEE6472752BEFC00CD1E9B /* Dashboard View */,
 				FFEEE6482752BF0D00CD1E9B /* Statistics View */,
 				FFEEE64A2752BF3A00CD1E9B /* Transactions View */,
 				FFEEE6502752C15E00CD1E9B /* Profile View */,
-				FFEEE64E2752C07300CD1E9B /* PasswordUpdate View */,
-				FFEEE64F2752C0C800CD1E9B /* About View */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -281,7 +290,6 @@
 			isa = PBXGroup;
 			children = (
 				FFA7242C275426D5001E6440 /* LoginView.swift */,
-				FF2E7B7A2754334A007A7A91 /* TopLogoView.swift */,
 				FF2E7B7C27543754007A7A91 /* LoginTextView.swift */,
 				FF2E7B7E27544088007A7A91 /* CredentialView.swift */,
 				FF2E7B8027544AF9007A7A91 /* ButtonView.swift */,
@@ -325,24 +333,11 @@
 			path = "Transactions View";
 			sourceTree = "<group>";
 		};
-		FFEEE64E2752C07300CD1E9B /* PasswordUpdate View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "PasswordUpdate View";
-			sourceTree = "<group>";
-		};
-		FFEEE64F2752C0C800CD1E9B /* About View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "About View";
-			sourceTree = "<group>";
-		};
 		FFEEE6502752C15E00CD1E9B /* Profile View */ = {
 			isa = PBXGroup;
 			children = (
 				FF76C0DB2756C18F00EF2FA1 /* ProfileView.swift */,
+				FF5BC9552760EC06004B1FAC /* ImageAndNameView.swift */,
 			);
 			path = "Profile View";
 			sourceTree = "<group>";
@@ -515,6 +510,7 @@
 				FF76C0D02756703F00EF2FA1 /* DuinoTabView.swift in Sources */,
 				FF76C0D2275670CE00EF2FA1 /* DashboardView.swift in Sources */,
 				FF23ACB82759287E00E3794D /* UserDataModel.swift in Sources */,
+				FF5BC9562760EC06004B1FAC /* ImageAndNameView.swift in Sources */,
 				FF9DEAEE275E67A200F3D7AD /* StatisticsModel.swift in Sources */,
 				FF2E7B8127544AF9007A7A91 /* ButtonView.swift in Sources */,
 			);
@@ -686,6 +682,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -717,6 +714,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

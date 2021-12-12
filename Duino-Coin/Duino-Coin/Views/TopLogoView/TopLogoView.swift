@@ -32,14 +32,13 @@ struct TopLogoView: View {
             
             // text
             Text("Duino-Coin")
-                .foregroundColor(.secondary)
+                .foregroundColor(.black)
                 .font(.title3)
                 .fontWeight(.heavy)
                 .padding([.top, .bottom])
             
             Spacer()
         } //: hstack
-        
     } //: body
 }
 

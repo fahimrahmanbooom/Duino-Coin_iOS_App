@@ -10,14 +10,15 @@ import SwiftUI
 struct TransactionsView: View {
     
     // MARK: - Properties
-    @State private var timer = Timer.publish(every: 20, on: .main, in: .common).autoconnect()
     
+    @State var loader: Bool = true
     @State private var transactionsData = TransactionsModel()
+    @State private var timer = Timer.publish(every: 20, on: .main, in: .common).autoconnect()
     
     // body
     var body: some View {
-        // Navigation View
-        NavigationView {
+        // zstack
+        ZStack {
             // scroll view
             ScrollView(.vertical, showsIndicators: false) {
                 // vstack
@@ -25,23 +26,30 @@ struct TransactionsView: View {
                     TopLogoView()
                     TransactionsRowView(transactionsData: $transactionsData)
                 } //: vstack
-                .drawingGroup()
             } //: scroll view
             .clipped()
-            .navigationBarHidden(true)
-        } //: navigation view
-        .task {
-            await loadUserTransactionsData()
-            self.timer = timer.upstream.autoconnect()
-        }
-        .onReceive(self.timer) { _ in
-            Task {
+            .blur(radius: self.loader ? 10 : 0)
+            .task {
                 await loadUserTransactionsData()
+                self.timer = timer.upstream.autoconnect()
             }
-        }
-        .onDisappear {
-            self.timer.upstream.connect().cancel()
-        }
+            .onReceive(self.timer) { _ in
+                Task {
+                    await loadUserTransactionsData()
+                }
+            }
+            .onDisappear {
+                self.timer.upstream.connect().cancel()
+            }
+            
+            // show loader
+            if self.loader {
+                ProgressView()
+                    .progressViewStyle(.circular)
+                    .tint(.customOrange)
+                    .scaleEffect(1.5)
+            }
+        } //: zstack
     } //: body
     
     
@@ -51,6 +59,7 @@ struct TransactionsView: View {
         await Networking.getRequest(url: URL.userTransactionsURL(username: UserDefaults.standard.string(forKey: "username") ?? ""), expecting: TransactionsModel.self, completion: { result in
             do {
                 try self.transactionsData = result.get()
+                self.loader = false
             } catch {
                 print(error)
             }

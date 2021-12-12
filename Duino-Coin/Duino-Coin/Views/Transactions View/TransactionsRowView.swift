@@ -33,13 +33,13 @@ struct TransactionsRowView: View {
                                 .resizable()
                                 .frame(width: 35, height: 35)
                                 .font(Font.title.weight(.thin))
-                                .foregroundColor(.white)
+                                .foregroundColor(.black)
                             
                             // amount
                             Text("\(self.transactionsData.result?[item].amount ?? 0) ᕲ")
                                 .foregroundColor(.customOrange)
                                 .font(.title)
-                                .fontWeight(.regular)
+                                .fontWeight(.semibold)
                                 .lineLimit(1)
                                 .padding([.trailing, .vertical])
                             
@@ -47,7 +47,7 @@ struct TransactionsRowView: View {
                         
                         // sender
                         Text("Sender: \(self.transactionsData.result?[item].sender ?? "")")
-                            .foregroundColor(.customOrange)
+                            .foregroundColor(.black)
                             .font(.subheadline)
                             .fontWeight(.regular)
                             .padding(.vertical, 1)
@@ -55,7 +55,7 @@ struct TransactionsRowView: View {
                         
                         // recipent
                         Text("Recipient: \(self.transactionsData.result?[item].recipient ?? "")")
-                            .foregroundColor(.customOrange)
+                            .foregroundColor(.black)
                             .font(.subheadline)
                             .fontWeight(.regular)
                             .padding(.vertical, 1)
@@ -63,7 +63,7 @@ struct TransactionsRowView: View {
                         
                         // time and date
                         Text("Time and Date: \(self.transactionsData.result?[item].datetime ?? "")")
-                            .foregroundColor(.customOrange)
+                            .foregroundColor(.black)
                             .font(.caption)
                             .fontWeight(.regular)
                             .padding(.vertical, 1)

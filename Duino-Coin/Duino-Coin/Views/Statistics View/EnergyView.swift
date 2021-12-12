@@ -25,12 +25,12 @@ struct EnergyView: View {
                     Image(systemName: "bolt")
                         .resizable()
                         .frame(width: 20, height: 35)
-                        .foregroundColor(.white)
+                        .foregroundColor(.black)
                         .font(Font.title.weight(.thin))
                         .padding([.leading, .trailing, .top])
                     
                     Text("Energy")
-                        .foregroundColor(.white)
+                        .foregroundColor(.black)
                         .fontWeight(.regular)
                         .padding([.leading, .trailing, .bottom])
                 } //: vstack
@@ -43,7 +43,7 @@ struct EnergyView: View {
             HStack {
                 
                 Text("Usage")
-                    .foregroundColor(.white)
+                    .foregroundColor(.black)
                     .fontWeight(.regular)
                     .lineLimit(1)
                     .padding([.leading, .bottom])
@@ -52,7 +52,7 @@ struct EnergyView: View {
                 
                 Text(energy)
                     .foregroundColor(.customOrange)
-                    .fontWeight(.regular)
+                    .fontWeight(.semibold)
                     .lineLimit(1)
                     .padding([.trailing, .bottom])
             } //: hstack

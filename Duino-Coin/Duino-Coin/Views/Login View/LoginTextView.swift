@@ -16,7 +16,7 @@ struct LoginTextView: View {
         HStack {
             // text
             Text("Login")
-                .foregroundColor(.secondary)
+                .foregroundColor(.black)
                 .font(.system(size: 35, weight: .bold, design: .default))
             
             Spacer()

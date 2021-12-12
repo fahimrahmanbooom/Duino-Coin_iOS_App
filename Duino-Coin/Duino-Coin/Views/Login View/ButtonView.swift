@@ -51,7 +51,7 @@ struct ButtonView: View {
                         Text("Login")
                             .font(.title3)
                             .fontWeight(.semibold)
-                            .foregroundColor(.primary)
+                            .foregroundColor(.white)
                             .frame(height: 20, alignment: .center)
                             .padding()
                         
@@ -86,8 +86,8 @@ struct ButtonView: View {
                             .padding()
                         
                         Spacer()
+                        
                     } //: hstack
-                    //.background(Color.secondary)
                     .cornerRadius(10)
                 } //: button
             } //: vstack

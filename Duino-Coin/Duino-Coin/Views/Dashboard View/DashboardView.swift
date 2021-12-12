@@ -11,24 +11,29 @@ import SwiftUI
 struct DashboardView: View {
     
     // MARK: -  Properties
+    
+    @State private var quickStatusData = [
+        "Total Hashrate": String(),
+        "DUCO Price": String(),
+        "DUCO Balance": String(),
+        "USD Balance": String()
+    ]
+    @State var loader: Bool = true
     @State private var userData = UserDataModel()
     @State private var ducoPrice = DucoPriceModel()
-    
-    @State private var quickStatusData = ["Total Hashrate": String(), "DUCO Price": String(), "DUCO Balance": String(), "USD Balance": String()]
-    
     @State private var isVerifiedUser = String()
-    
     @State private var timer = Timer.publish(every: 10, on: .main, in: .common).autoconnect()
-    
     
     // body
     var body: some View {
-        // navigation view
-        NavigationView {
+        
+        // zstack
+        ZStack {
             // scroll view
             ScrollView(.vertical, showsIndicators: false) {
                 // vstack
                 VStack {
+                    
                     TopLogoView()
                     Spacer()
                     UsernameTextView(isVerifiedUser: $isVerifiedUser)
@@ -36,32 +41,40 @@ struct DashboardView: View {
                     QuickStatusView(quickStatusData: $quickStatusData)
                     Spacer()
                     MinersListView(userData: $userData)
+                    
                 } //: vstack
-                .drawingGroup()
             } //: scroll view
             .clipped()
-            .navigationBarHidden(true)
-        } //: navigation view
-        .task {
-            await loadUserData()
-            await loadDucoPrice()
-            self.timer = timer.upstream.autoconnect()
-        }
-        .onReceive(self.timer) { _ in
-            Task {
+            .blur(radius: self.loader ? 10 : 0)
+            .task {
                 await loadUserData()
                 await loadDucoPrice()
+                self.timer = timer.upstream.autoconnect()
             }
-        }
-        .onDisappear {
-            self.timer.upstream.connect().cancel()
-        }
+            .onReceive(self.timer) { _ in
+                Task {
+                    await loadUserData()
+                    await loadDucoPrice()
+                }
+            }
+            .onDisappear {
+                self.timer.upstream.connect().cancel()
+            }
+            
+            // show loader
+            if self.loader {
+                ProgressView()
+                    .progressViewStyle(.circular)
+                    .tint(.customOrange)
+                    .scaleEffect(1.5)
+            }
+        } //: zstack
     } //: body
     
     
     // user data load
     private func loadUserData() async {
-    
+        
         await Networking.getRequest(url: URL.userDataURL(username: UserDefaults.standard.string(forKey: "username") ?? ""), expecting: UserDataModel.self, completion: { result in
             do {
                 try self.userData = result.get()
@@ -69,6 +82,7 @@ struct DashboardView: View {
                 self.isVerifiedUser = self.userData.result?.balance?.verified ?? ""
                 
                 DispatchQueue.main.async {
+                    
                     let totalHashrate = calculateTotalHashrate(miners: ( self.userData.result?.miners)!)
                     
                     if totalHashrate < 1000 {
@@ -78,7 +92,9 @@ struct DashboardView: View {
                         self.quickStatusData["Total Hashrate"] = "\((totalHashrate / 1000).round(to: 3)) KH/s"
                     }
                     self.quickStatusData["DUCO Balance"] = "\(self.userData.result?.balance?.balance?.round(to: 8) ?? 0.0) ᕲ"
-
+                    
+                    // turn off loader
+                    self.loader = false
                 }
             } catch {
                 print(error)
@@ -94,12 +110,21 @@ struct DashboardView: View {
             do {
                 try ducoPrice = result.get()
                 DispatchQueue.main.async {
+                    
                     let ducoPrice = self.ducoPrice.ducoPriceInUSD
+                    
                     let ducoBalance = self.userData.result?.balance?.balance
+                    
                     let balanceInUSD = (ducoBalance ?? 0.0) * (ducoPrice ?? 0.0)
                     
                     self.quickStatusData["DUCO Price"] = "$ \(ducoPrice ?? 0.0)"
+                    
                     self.quickStatusData["USD Balance"] = "$ \(balanceInUSD.round(to: 8))"
+                    
+                    UserDefaults.standard.set(ducoBalance, forKey: "ducoBalance")
+                    
+                    // turn off loader
+                    self.loader = false
                 }
             } catch {
                 print(error)
@@ -127,6 +152,5 @@ extension DashboardView {
 struct DashboardView_Previews: PreviewProvider {
     static var previews: some View {
         DashboardView()
-            .preferredColorScheme(.dark)
     }
 }

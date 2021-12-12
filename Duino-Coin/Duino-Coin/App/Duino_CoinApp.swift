@@ -14,14 +14,8 @@ struct Duino_CoinApp: App {
 
     var body: some Scene {
         WindowGroup {
-            if !loggedIn {
-                LoginView()
-                    .environment(\.colorScheme, .dark)
-            }
-            else {
-                DuinoTabView()
-                    .environment(\.colorScheme, .dark)
-            }
+            if !loggedIn { LoginView() }
+            else { DuinoTabView() }
         }
     }
 }

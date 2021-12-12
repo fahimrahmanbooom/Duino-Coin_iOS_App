@@ -10,10 +10,8 @@ import Foundation
 // MARK: - TransactionsModel
 
 struct TransactionsModel: Codable {
-    
     var result: [TransactionsResponse]?
     var success: Bool?
-    
     enum CodingKeys: String, CodingKey {
         case result = "result"
         case success

@@ -30,8 +30,10 @@ struct LoginView: View {
                     ButtonView(credentials: credentials, loader: loader)
                     Spacer()
                 } //: vstack
+                .blur(radius: self.loader.isLoading ? 10 : 0)
                 
-                if loader.isLoading {
+                // loader
+                if self.loader.isLoading {
                     ProgressView()
                         .progressViewStyle(.circular)
                         .tint(.customOrange)
@@ -47,6 +49,6 @@ struct LoginView: View {
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
         LoginView()
-            .preferredColorScheme(.dark)
+            .preferredColorScheme(.light)
     }
 }

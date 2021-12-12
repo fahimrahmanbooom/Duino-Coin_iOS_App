@@ -11,7 +11,6 @@ extension URL {
 
     // base URL
     private static let baseURLString = "https://server.duinocoin.com/"
-
     
     // login url
     static func loginURL(username: String, password: String) -> URL? {

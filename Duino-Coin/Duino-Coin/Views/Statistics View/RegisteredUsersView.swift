@@ -25,12 +25,12 @@ struct RegisteredUsersView: View {
                     Image(systemName: "person.3")
                         .resizable()
                         .frame(width: 75, height: 35)
-                        .foregroundColor(.white)
+                        .foregroundColor(.black)
                         .font(Font.title.weight(.thin))
                         .padding([.leading, .trailing, .top])
                     
                     Text("Registered Users")
-                        .foregroundColor(.white)
+                        .foregroundColor(.black)
                         .fontWeight(.regular)
                         .padding([.leading, .trailing, .bottom])
                 } // vstack

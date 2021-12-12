@@ -37,11 +37,12 @@ struct QuickStatusView: View {
                             
                             // values
                             Text(quickStatusData[headlines[item]] ?? "")
-                                .foregroundColor(.white)
+                                .foregroundColor(.black)
                                 .font(.subheadline)
                                 .bold()
                                 .padding(.vertical, 5)
                                 .lineLimit(1)
+                            
                         } //: vstack
                     } //: hstack
                     .frame(maxWidth: .infinity)
@@ -61,7 +62,6 @@ struct QuickStatusView: View {
 struct QuickStatusView_Previews: PreviewProvider {
     static var previews: some View {
         QuickStatusView(quickStatusData: .constant(["":""]))
-            .preferredColorScheme(.dark)
             .previewLayout(.sizeThatFits)
     }
 }

@@ -25,12 +25,12 @@ struct ActiveConnectionsView: View {
                     Image(systemName: "point.3.connected.trianglepath.dotted")
                         .resizable()
                         .frame(width: 45, height: 35)
-                        .foregroundColor(.white)
+                        .foregroundColor(.black)
                         .font(Font.title.weight(.thin))
                         .padding([.leading, .trailing, .top])
                     
                     Text("Active Connections")
-                        .foregroundColor(.white)
+                        .foregroundColor(.black)
                         .fontWeight(.regular)
                         .padding([.leading, .trailing, .bottom])
                 } // vstack

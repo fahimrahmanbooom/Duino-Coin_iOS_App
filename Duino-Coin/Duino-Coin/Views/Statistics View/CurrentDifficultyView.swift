@@ -25,12 +25,12 @@ struct CurrentDifficultyView: View {
                     Image(systemName: "cube")
                         .resizable()
                         .frame(width: 32, height: 35)
-                        .foregroundColor(.white)
+                        .foregroundColor(.black)
                         .font(Font.title.weight(.thin))
                         .padding([.leading, .trailing, .top])
                     
                     Text("Current Difficulty")
-                        .foregroundColor(.white)
+                        .foregroundColor(.black)
                         .fontWeight(.regular)
                         .padding([.leading, .trailing, .bottom])
                 } // vstack

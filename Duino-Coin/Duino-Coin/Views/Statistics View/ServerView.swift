@@ -27,13 +27,13 @@ struct ServerView: View {
                     Image(systemName: "server.rack")
                         .resizable()
                         .frame(width: 35, height: 35)
-                        .foregroundColor(.white)
+                        .foregroundColor(.black)
                         .font(Font.title.weight(.thin))
                         .padding([.leading, .trailing, .top])
                     
                     // headline
                     Text("Server")
-                        .foregroundColor(.white)
+                        .foregroundColor(.black)
                         .fontWeight(.regular)
                         .padding([.leading, .trailing, .bottom])
                 } //: vstack
@@ -50,13 +50,13 @@ struct ServerView: View {
                 VStack(alignment: .leading, spacing: 1) {
         
                     Text("Version")
-                        .foregroundColor(.white)
+                        .foregroundColor(.black)
                         .fontWeight(.regular)
                     Text("CPU")
-                        .foregroundColor(.white)
+                        .foregroundColor(.black)
                         .fontWeight(.regular)
                     Text("RAM")
-                        .foregroundColor(.white)
+                        .foregroundColor(.black)
                         .fontWeight(.regular)
                     
                 } //: vstack
@@ -69,13 +69,13 @@ struct ServerView: View {
                     
                     Text(serverVersion)
                         .foregroundColor(.customOrange)
-                        .fontWeight(.regular)
+                        .fontWeight(.semibold)
                     Text("\(serverCPU) %")
                         .foregroundColor(.customOrange)
-                        .fontWeight(.regular)
+                        .fontWeight(.semibold)
                     Text("\(serverRAM) %")
                         .foregroundColor(.customOrange)
-                        .fontWeight(.regular)
+                        .fontWeight(.semibold)
                     
                 } //: vstack
                 .padding([.trailing, .bottom])

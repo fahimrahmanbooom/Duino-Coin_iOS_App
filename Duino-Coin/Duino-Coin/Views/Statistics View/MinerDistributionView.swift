@@ -19,7 +19,7 @@ struct MinerDistributionView: View {
         VStack(alignment: .center) {
             
             Text("Miner Distribution")
-                .foregroundColor(.white)
+                .foregroundColor(.black)
                 .font(.title3)
                 .fontWeight(.regular)
                 .padding()
@@ -34,13 +34,13 @@ struct MinerDistributionView: View {
                         .resizable()
                         .frame(width: 35, height: 35)
                         .foregroundColor(.customOrange)
-                        .font(Font.title.weight(.thin))
+                        .font(Font.title.weight(.light))
                         .padding([.leading, .top, .bottom])
                     
                     // model name
                     Text(item)
-                        .foregroundColor(.white)
-                        .fontWeight(.regular)
+                        .foregroundColor(.black)
+                        .fontWeight(.semibold)
                         .padding([.leading, .top, .bottom])
                     
                     Spacer()
@@ -48,7 +48,7 @@ struct MinerDistributionView: View {
                     // quantity
                     Text("\(minerDistribution[item] ?? 0)")
                         .foregroundColor(.customOrange)
-                        .fontWeight(.regular)
+                        .fontWeight(.semibold)
                         .padding([.trailing, .top, .bottom])
                     
                 } //: hstack

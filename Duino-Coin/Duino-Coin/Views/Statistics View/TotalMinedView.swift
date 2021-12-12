@@ -26,12 +26,12 @@ struct TotalMinedView: View {
                     Image(systemName: "hammer")
                         .resizable()
                         .frame(width: 35, height: 35)
-                        .foregroundColor(.white)
+                        .foregroundColor(.black)
                         .font(Font.title.weight(.thin))
                         .padding([.leading, .trailing, .top])
                     
                     Text("Total Mined")
-                        .foregroundColor(.white)
+                        .foregroundColor(.black)
                         .fontWeight(.regular)
                         .padding([.leading, .trailing, .bottom])
                 } // vstack

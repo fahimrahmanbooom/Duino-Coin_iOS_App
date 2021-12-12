@@ -11,6 +11,8 @@ import SwiftUI
 struct StatisticsView: View {
     
     // MARK: - Properties
+    
+    @State var loader: Bool = true
     @State private var statisticsData = StatisticsModel()
     @State private var timer = Timer.publish(every: 15, on: .main, in: .common).autoconnect()
     @State private var netHashrate: String = String()
@@ -28,8 +30,9 @@ struct StatisticsView: View {
     
     // body
     var body: some View {
-        // Navigation View
-        NavigationView {
+        
+        // zstack
+        ZStack {
             // scroll view
             ScrollView(.vertical, showsIndicators: false) {
                 // vstack
@@ -57,23 +60,30 @@ struct StatisticsView: View {
                     // miner distribution
                     MinerDistributionView(minerDistribution: $minerDistribution)
                 } //: vstack
-                .drawingGroup()
             } //: scroll view
             .clipped()
-            .navigationBarHidden(true)
-        } //: navigation view
-        .task {
-            await loadStatisticsData()
-            self.timer = timer.upstream.autoconnect()
-        }
-        .onReceive(self.timer) { _ in
-            Task {
+            .blur(radius: self.loader ? 10 : 0)
+            .task {
                 await loadStatisticsData()
+                self.timer = timer.upstream.autoconnect()
             }
-        }
-        .onDisappear {
-            self.timer.upstream.connect().cancel()
-        }
+            .onReceive(self.timer) { _ in
+                Task {
+                    await loadStatisticsData()
+                }
+            }
+            .onDisappear {
+                self.timer.upstream.connect().cancel()
+            }
+            
+            // show loader
+            if self.loader {
+                ProgressView()
+                    .progressViewStyle(.circular)
+                    .tint(.customOrange)
+                    .scaleEffect(1.5)
+            }
+        } //: zstack
     } //: body
     
     // load statistics data
@@ -92,6 +102,9 @@ struct StatisticsView: View {
                 self.CurrentDifficulty = String(self.statisticsData.currentDifficulty ?? 0)
                 self.totalMined = String(self.statisticsData.allTimeMinedDUCO?.round(to: 2) ?? 0)
                 self.minerDistribution = self.statisticsData.minerDistribution ?? ["nil": 0]
+                
+                // turn off loader
+                self.loader = false
             } catch {
                 print(error)
             }
