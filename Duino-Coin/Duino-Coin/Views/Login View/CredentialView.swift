@@ -39,7 +39,7 @@ struct CredentialView: View {
                     TextField("Username", text: $credentials.username)
                         .padding([.top, .bottom, .trailing], 20)
                         .padding(.leading, 10)
-                        .keyboardType(.namePhonePad)
+                        .keyboardType(.default)
                         .focused($focusedField, equals: .username)
                     
                 } //: hstack

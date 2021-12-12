@@ -39,7 +39,7 @@ Duino-Coin is a coin that can be mined with Arduinos, ESP8266/32 boards, Raspber
  * Amount
  * In / Out Indicator
  * Sender Name
- * Recipent Name
+ * Recipient Name
  * Time and Date
 
 ### Profile: 
