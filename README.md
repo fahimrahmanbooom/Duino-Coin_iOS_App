@@ -2,7 +2,7 @@
 ![N|Solid](https://github.com/revoxhere/duino-coin/raw/master/Resources/ducobanner.png?raw=true)
 
 # Duino-Coin iOS App (Version 1.0)
-### Developed and Maintained By: Fahim Rahman (https://github.com/fahimrahmanbooom)
+### Developed and Maintained By: Fahim Rahman (https://fahimrahman.netlify.app/)
 - Last Updated: 3 Dec 2021
 - Further Development: Yes
 
