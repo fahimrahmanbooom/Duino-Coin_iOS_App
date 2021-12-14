@@ -19,7 +19,6 @@
 		FF2E7B8427544F36007A7A91 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2E7B8327544F36007A7A91 /* AppColors.swift */; };
 		FF3AB2BE275FC31F00E04FCA /* TransactionsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3AB2BD275FC31F00E04FCA /* TransactionsRowView.swift */; };
 		FF3AB2C2275FC46200E04FCA /* TransactionsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3AB2C1275FC46200E04FCA /* TransactionsModel.swift */; };
-		FF5BC95227605F6B004B1FAC /* DataCache in Frameworks */ = {isa = PBXBuildFile; productRef = FF5BC95127605F6B004B1FAC /* DataCache */; };
 		FF5BC9562760EC06004B1FAC /* ImageAndNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5BC9552760EC06004B1FAC /* ImageAndNameView.swift */; };
 		FF76C0C72755406600EF2FA1 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF76C0C62755406600EF2FA1 /* LoginModel.swift */; };
 		FF76C0C92755411200EF2FA1 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF76C0C82755411200EF2FA1 /* API.swift */; };
@@ -119,7 +118,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF5BC95227605F6B004B1FAC /* DataCache in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,7 +357,6 @@
 			);
 			name = "Duino-Coin";
 			packageProductDependencies = (
-				FF5BC95127605F6B004B1FAC /* DataCache */,
 			);
 			productName = "Duino-Coin";
 			productReference = FFEEE6142752BCDF00CD1E9B /* Duino-Coin.app */;
@@ -434,7 +431,6 @@
 			);
 			mainGroup = FFEEE60B2752BCDE00CD1E9B;
 			packageReferences = (
-				FF5BC95027605F6B004B1FAC /* XCRemoteSwiftPackageReference "DataCache" */,
 			);
 			productRefGroup = FFEEE6152752BCDF00CD1E9B /* Products */;
 			projectDirPath = "";
@@ -863,25 +859,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		FF5BC95027605F6B004B1FAC /* XCRemoteSwiftPackageReference "DataCache" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/huynguyencong/DataCache.git";
-			requirement = {
-				kind = exactVersion;
-				version = 1.6.1;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		FF5BC95127605F6B004B1FAC /* DataCache */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = FF5BC95027605F6B004B1FAC /* XCRemoteSwiftPackageReference "DataCache" */;
-			productName = DataCache;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FFEEE60C2752BCDF00CD1E9B /* Project object */;
 }
