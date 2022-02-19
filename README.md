@@ -52,7 +52,7 @@ Duino-Coin is a coin that can be mined with Arduinos, ESP8266/32 boards, Raspber
 - SwiftUI
 
 ## Installation
-- Go to App Store and Search for "Duino-Coin"
+- Clone the repo. Install the app using Xcode. Due to apple's restrictions the app is not available on the appstore.
 
 ## Usage
 - Login:
