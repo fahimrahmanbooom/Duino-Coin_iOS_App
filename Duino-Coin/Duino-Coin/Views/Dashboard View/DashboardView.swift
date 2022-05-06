@@ -117,7 +117,7 @@ struct DashboardView: View {
                     
                     let balanceInUSD = (ducoBalance ?? 0.0) * (ducoPrice ?? 0.0)
                     
-                    self.quickStatusData["DUCO Price"] = "$ \(ducoPrice ?? 0.0)"
+                    self.quickStatusData["DUCO Price"] = "$ \((NSNumber(value: ducoPrice ?? 0.0).decimalValue))"
                     
                     self.quickStatusData["USD Balance"] = "$ \(balanceInUSD.round(to: 8))"
                     
