@@ -111,7 +111,7 @@ struct DashboardView: View {
                 try ducoPrice = result.get()
                 DispatchQueue.main.async {
                     
-                    let ducoPrice = self.ducoPrice.ducoPriceInUSD
+                    let ducoPrice = Double(self.ducoPrice.ducoPriceInUSD?.toString(decimal: 20) ?? "")
                     
                     let ducoBalance = self.userData.result?.balance?.balance
                     
@@ -119,7 +119,7 @@ struct DashboardView: View {
                     
                     self.quickStatusData["DUCO Price"] = "$ \((NSNumber(value: ducoPrice ?? 0.0).decimalValue))"
                     
-                    self.quickStatusData["USD Balance"] = "$ \(balanceInUSD.round(to: 8))"
+                    self.quickStatusData["USD Balance"] = "$ \(balanceInUSD.toString(decimal: 10))"
                     
                     UserDefaults.standard.set(ducoBalance, forKey: "ducoBalance")
                     
