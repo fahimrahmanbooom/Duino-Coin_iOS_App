@@ -20,7 +20,7 @@ struct TransactionsRowView: View {
         // grid
         LazyVGrid(columns: columns, spacing: 10) {
             // for each
-            ForEach(0..<(self.transactionsData.result?.count ?? 0), id: \.self) { item in
+            ForEach((0..<(self.transactionsData.result?.count ?? 0)).reversed(), id: \.self) { item in
                 // hstack
                 HStack {
                     // vstack
