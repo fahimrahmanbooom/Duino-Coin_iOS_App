@@ -1,9 +1,9 @@
 
 ![N|Solid](https://github.com/revoxhere/duino-coin/raw/master/Resources/ducobanner.png?raw=true)
 
-# Duino-Coin iOS App (Version 1.1)
+# Duino-Coin iOS App (Version 1.2)
 ### Developed and Maintained By: Fahim Rahman (https://fahimrahman.netlify.app/)
-- Last Updated: 7 May 2022
+- Last Updated: 21 March 2023
 - Further Development: Yes
 
 Duino-Coin is a coin that can be mined with Arduinos, ESP8266/32 boards, Raspberry Pis, computers, and many more (including Wi-Fi routers, smart TVs, smartphones, smartwatches, SBCs, MCUs or even GPUs)
@@ -52,11 +52,11 @@ Duino-Coin is a coin that can be mined with Arduinos, ESP8266/32 boards, Raspber
 - SwiftUI
 
 ## Installation
-- Clone the repo. Install the app using Xcode. Due to apple's restrictions the app is not available on the appstore.
+- Clone the repo. Install the app using Xcode or Use the attached IPA file to install or download it from here: https://i.diawi.com/yL7itA . Due to apple's restrictions the app is not available on the appstore.
 
 ## Usage
 - Login:
-  Use your DUCO Username and Password to Login. 
+  Use your DUCO Username to Login. (Don't use others username, this may ban your account)
   (These credentials are not saved locally and are only used to check If the user is valid or not.)
 
 - Register:

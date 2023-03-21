@@ -46,21 +46,21 @@ struct CredentialView: View {
                 .padding(.top, 0)
                 
                 // hstack
-                HStack {
-                    // icon
-                    Image(systemName: "lock.fill")
-                        .resizable()
-                        .foregroundColor(.customOrange)
-                        .frame(width: 20, height: 26)
-                    
-                    // text input field
-                    SecureField("Password", text: $credentials.password)
-                        .padding([.top, .bottom, .trailing], 20)
-                        .padding(.leading, 15)
-                        .focused($focusedField, equals: .password)
-                        
-                } //: hstack
-                .padding(.bottom, 0)
+//                HStack {
+//                    // icon
+//                    Image(systemName: "lock.fill")
+//                        .resizable()
+//                        .foregroundColor(.customOrange)
+//                        .frame(width: 20, height: 26)
+//
+//                    // text input field
+//                    SecureField("Password", text: $credentials.password)
+//                        .padding([.top, .bottom, .trailing], 20)
+//                        .padding(.leading, 15)
+//                        .focused($focusedField, equals: .password)
+//
+//                } //: hstack
+//                .padding(.bottom, 0)
             } //: vstack
             .task  {
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {

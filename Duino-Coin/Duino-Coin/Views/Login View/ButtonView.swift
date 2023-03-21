@@ -13,7 +13,8 @@ struct ButtonView: View {
     // MARK: - Properties
     @AppStorage("loggedIn") var loggedIn: Bool?
     
-    @State private var loginModel: LoginModel?
+    //@State private var loginModel: LoginModel?
+    @State private var userData = UserDataModel()
     @State private var emptyFieldsAlert = false
     @State private var wrongCredentialAlert = false
     
@@ -31,7 +32,11 @@ struct ButtonView: View {
                 // button
                 Button {
                     // login operation task
-                    if (credentials.username.isEmpty && credentials.password.isEmpty) || (credentials.username.isEmpty || credentials.password.isEmpty) {
+//                    if (credentials.username.isEmpty && credentials.password.isEmpty) || (credentials.username.isEmpty || credentials.password.isEmpty) {
+//                        // alert for empty field(s)
+//                        emptyFieldsAlert = true
+//                    }
+                    if (credentials.username.isEmpty) {
                         // alert for empty field(s)
                         emptyFieldsAlert = true
                     }
@@ -39,7 +44,8 @@ struct ButtonView: View {
                         // login task
                         Task {
                             self.loader.isLoading = true
-                            await loadLoginData()
+                            //await loadLoginData() // turned off because the backend has been updated.
+                            await checkIfTheUserIsValid()
                         } //: task
                     }
                 } label: {
@@ -95,12 +101,13 @@ struct ButtonView: View {
         .padding([.leading, .trailing], 10)
     } //: body
     
-    // load login data
-    func loadLoginData() async {
-        await Networking.getRequest(url: URL.loginURL(username: credentials.username, password: credentials.password), expecting: LoginModel.self, completion: { data in
+    
+    // check if the user is valid using the username
+    func checkIfTheUserIsValid() async {
+        await Networking.getRequest(url: URL.userDataURL(username: credentials.username), expecting: UserDataModel.self, completion: { result in
             do {
-                try self.loginModel = data.get()
-                if self.loginModel?.success == true {
+                try self.userData = result.get()
+                if self.userData.success == true {
                     DispatchQueue.main.async {
                         loggedIn = true
                         self.loader.isLoading = false
@@ -118,7 +125,33 @@ struct ButtonView: View {
                 print(error)
             }
         })
-    } //: load login data
+    } //: check if the user is valid
+    
+    
+    // load login data
+//    func loadLoginData() async {
+//        await Networking.getRequest(url: URL.loginURL(username: credentials.username, password: credentials.password), expecting: LoginModel.self, completion: { data in
+//            do {
+//                try self.loginModel = data.get()
+//                if self.loginModel?.success == true {
+//                    DispatchQueue.main.async {
+//                        loggedIn = true
+//                        self.loader.isLoading = false
+//                    }
+//                    UserDefaults.standard.set(credentials.username, forKey: "username")
+//                }
+//                else {
+//                    // alert for wrong credentials
+//                    DispatchQueue.main.async {
+//                        wrongCredentialAlert = true
+//                        self.loader.isLoading = false
+//                    }
+//                }
+//            } catch {
+//                print(error)
+//            }
+//        })
+//    } //: load login data
 }
 
 
