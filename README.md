@@ -17,10 +17,6 @@ Statistics | Transactions
 :-------------------------:|:-------------------------:
 ![](https://i.postimg.cc/RFykkDpZ/3.png)  |  ![](https://i.postimg.cc/ZRWkDScQ/4.png)
 
-Profile | :)
-:-------------------------:|:-------------------------:
-![](https://i.postimg.cc/zftZjBnW/5.png)
-
 ## App Features
 
 ### Dashboard: 
